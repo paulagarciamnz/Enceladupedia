@@ -1,0 +1,419 @@
+ENCELADUS	EUROPA	metabolism	Substrate	KEGG Module	pathway	protein family 	protein id	reaction	family gene	gene	marker gene	KEGG ID	COG ID	GO ID 	GenBank 	KEGG genome	Uniprot	NCBI protein
+yes	yes	methanogenesis	acetate	M00357	methanogenesis	acetyl-CoA synthetase	acs	acetate to acetyl-coa	acs	acs	no	K01895	COG0365	0003987	NA	NA	NA	NA
+yes	yes	methanogenesis	acetate	M00357 	methanogenesis	acetate kinase 	ackA	acetate to acetyl phosphate	ackA	ackA	no	K00925	COG0282	0008776	NA	NA	NA	NA
+yes	yes	methanogenesis	acetate	M00357	methanogenesis	phosphate acetyltransferase	pta	acetyl phosphate to acetyl-coA	pta	pta	no	K00625	COG0280	0008959	NA	NA	NA	NA
+yes	yes	methanogenesis	acetate	M00357, M00422	methanogenesis	acetyl-CoA decarbonylase/synthase, CODH/ACS complex subunit beta 	cdhC	acetyl coA to CO + a[methy Co(III) corrinoid] FeS protrein	cdhC	cdhC	no	K00193	COG1614	0043884	NA	NA	NA	NA
+yes	yes	methanogenesis	acetate	M00357, M00377, M00422	methanogenesis	acetyl-CoA decarbonylase/synthase, CODH/ACS complex subunit gamma 	cdhDE	a[methy Co(III) corrinoid] FeS protrein to 5-methyl-H4MPT	cdhDE	cdhE	no	K00197	COG1456	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	acetate	M00357, M00377, M00422	methanogenesis	acetyl-CoA decarbonylase/synthase,CODH/ACS complex subunit delta	cdhDE	a[methy Co(III) corrinoid] FeS protrein to 5-methyl-H4MPT	cdhDE	cdhD	no	K00194	COG2069	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	acetate	M00422	methanogenesis	anaerobic carbon-monoxide dehydrogenase, CODH/ACS complex subunit alpha	cdhAB	CO + H2O + 2 Oxidized ferredoxin <=> CO2 + 2 Reduced ferredoxin + 2 H+	cdhAB	cdhA	no	K00192	COG1152	0043885	NA	NA	NA	NA
+yes	yes	methanogenesis	acetate	M00422	methanogenesis	anaerobic carbon-monoxide dehydrogenase, CODH/ACS complex subunit epsilon	cdhAB	CO + H2O + 2 Oxidized ferredoxin <=> CO2 + 2 Reduced ferredoxin + 2 H+	cdhAB	cdhB	no	K00195 	COG1880	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00567	methanogenesis	formylmethanofuran dehydrogenase subunit A	fwd/fmdABCDEFGH	CO2 --> formylmethanofuran	fmdABCDEFGH	fmdA	no	K00200	COG1229	0018493	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00567	methanogenesis	formylmethanofuran dehydrogenase subunit B	fwd/fmdABCDEFGH	CO2 --> formylmethanofuran	fmdABCDEFGH	fmdB	no	K00201	COG1029	0018493	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00567	methanogenesis	formylmethanofuran dehydrogenase subunit C	fwd/fmdABCDEFGH	CO2 --> formylmethanofuran	fmdABCDEFGH	fmdC	no	K00202	COG2218	0018493	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00567	methanogenesis	formylmethanofuran dehydrogenase subunit D 	fwd/fmdABCDEFGH	CO2 --> formylmethanofuran	fmdABCDEFGH	fmdD	no	K00203	COG1153	0018493	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00567	methanogenesis	formylmethanofuran dehydrogenase subunit E	fwd/fmdABCDEFGH	CO2 --> formylmethanofuran	fmdABCDEFGH	fmdE	no	K11261	COG2191	0018493	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00567	methanogenesis	4Fe-4S ferredoxin	fwd/fmdABCDEFGH	CO2 --> formylmethanofuran	fmdABCDEFGH	fmdF	no	K00205	COG1145	0018493	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00567	methanogenesis	4Fe-4S ferredoxin	fwd/fmdABCDEFGH	CO2 --> formylmethanofuran	fmdABCDEFGH	fmdG	no	K11260	COG1145	0018493	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00567	methanogenesis	4Fe-4S ferredoxin	fwd/fmdABCDEFGH	CO2 --> formylmethanofuran	fmdABCDEFGH	fmdH	no	K00204	COG1146	0018493	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00567	methanogenesis	formylmethanofuran-tetrahydromethanopterin formyltransferase	ftr	formylmethanofuran --> 5-formyl-H4MPT	ftr	ftr	yes	K00672	COG2037	0030270	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00567	methanogenesis	methenyl-tetrahydromethanopterincyclohydrolase 	mch	 5-formyl-H4MPT --> 5,10-methenyl-H4MPT	mch	mch	no	K01499	COG3252	0018759	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00567	methanogenesis	5,10-methenyltetrahydromethanopterin hydrogenase	hmd, hmdII, hmdII	 5,10-methenyl-H4MPT -->  5,10-metylene-H4MPT	hmd	hmd	yes	K13942	COG4074	0047068	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00567	methanogenesis	methylenetetrahydromethanopterin dehydrogenase 	mtd	 5,10-methenyl-H4MPT -->  5,10-methylene-H4MPT	mtd	mtd	yes	K00319	COG1927	0030268	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00567	methanogenesis	5,10-methylenetetrahydromethanopterin reductase	mer	5,10-metylene-H4MPT --> 5 methyl-H4MPT	mer	mer	no	K00320	COG2141	0018537	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00357, M00367	methanogenesis	tetrahydromethanopterin S-methyltransferase subunit A 	mtr	5-methyl-H4MPT to methyl-coM	mtrABCDEFGH	mtrA	yes	K00577	COG4063	0030269	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00357, M00367	methanogenesis	tetrahydromethanopterin S-methyltransferase subunit B	mtr	5-methyl-H4MPT to methyl-coM	mtrABCDEFGH	mtrB	yes	K00578	COG4062	0030269	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00357, M00367	methanogenesis	tetrahydromethanopterin S-methyltransferase subunit C	mtr	5-methyl-H4MPT to methyl-coM	mtrABCDEFGH	mtrC	yes	K00579	COG4061	0030269	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00357, M00367	methanogenesis	tetrahydromethanopterin S-methyltransferase subunit D	mtr	5-methyl-H4MPT to methyl-coM	mtrABCDEFGH	mtrD	yes	K00580	COG4060	0030269	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00357, M00367	methanogenesis	tetrahydromethanopterin S-methyltransferase subunit E	mtr	5-methyl-H4MPT to methyl-coM	mtrABCDEFGH	mtrE	yes	K00581	COG4059	0030269	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00357, M00367	methanogenesis	tetrahydromethanopterin S-methyltransferase subunit F	mtr	5-methyl-H4MPT to methyl-coM	mtrABCDEFGH	mtrF	no	K00582	COG4058	0030269	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00357, M00367	methanogenesis	tetrahydromethanopterin S-methyltransferase subunit G	mtr	5-methyl-H4MPT to methyl-coM	mtrABCDEFGH	mtrG	yes	K00583	COG4057	0030269	NA	NA	NA	NA
+yes	yes	methanogenesis	Carbon Dioxide	M00357, M00367	methanogenesis	tetrahydromethanopterin S-methyltransferase subunit H	mtr	5-methyl-H4MPT to methyl-coM	mtrABCDEFGH	mtrH	no	K00584	COG4057	0030269	NA	NA	NA	NA
+yes	yes	methanogenesis	monomethylamine	M00563	methanogenesis	methylamine---corrinoid protein Co-methyltransferase 	mtmABC	monomethylamine --> methyl-coM	mtmABC	mtmB	no	K16176	NA	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	monomethylamine	M00563	methanogenesis	monomethylamine corrinoid protein	mtmABC	monomethylamine --> methyl-coM	mtmABC	mtmC	no	K16177	COG5012	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	dimethylamine	M00563	methanogenesis	monomethylamine methyltransferase [methyl-Co(III) methylamine-specific corrinoid protein]:coenzyme M methyltransferase	mtbABC	dimethylamine --> methyl-coM	mtbABC	mtbA	no	K14082	COG0407	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	dimethylamine	0	methanogenesis	dimethylamine---corrinoid protein Co-methyltransferase 	mtbABC	dimethylamine --> methyl-coM	mtbABC	mtbB	no	K16178	NA	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	dimethylamine	M00563	methanogenesis	dimethylamine corrinoid protein	mtbABC	dimethylamine --> methyl-coM	mtbABC	mtbC	no	K16179	COG5012	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	trimethylamine	0	methanogenesis	trimethylamine---corrinoid protein Co-methyltransferase 	mttABC	trimethylamine --> methyl-coM	mttABC	mttB	no	K14083	COG5598	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	trimethylamine	0	methanogenesis	trimethylamine corrinoid protein	mttABC	trimethylamine --> methyl-coM	mttABC	mttC	no	K14084	COG5012	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanol	M00356	methanogenesis	methanol-cobalamin methyltransferase subunit alpha	mtaABC	methanol --> methyl-coM	mtaABC	mtaA	no	K14080	COG0407	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanol	M00356	methanogenesis	methanol-cobalamin methyltransferase subunit beta	mtaABC	methanol --> methyl-coM	mtaABC	mtaB	no	K04480	NA	0047152	NA	NA	NA	NA
+yes	yes	methanogenesis	methanol	M00356	methanogenesis	methanol corrinoid protein	mtaABC	methanol --> methyl-coM	mtaABC	mtaC	no	K14081	COG5012	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	M00356, M00357, M00563, M00567	methanogenesis	methyl-coenzyme M reductase I alpha subunit	MRI, mcrBDCGA	methyl-CoM --> CH4 + CoM-S-S-CoB	mcrBDCGA	mcrA	yes	K00399	NA	0050524	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	M00356, M00357, M00563, M00567	methanogenesis	methyl-coenzyme M reductase I beta subunit	MRI, mcrBDCGA	methyl-CoM --> CH4 + CoM-S-S-CoB	mcrBDCGA	mcrB	yes	K00401	NA	0050524	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	0	methanogenesis	methyl-coenzyme M reductase I subunit C	MRI, mcrBDCGA	methyl-CoM --> CH4 + CoM-S-S-CoB	mcrBDCGA	mcrC	no	K03421	NA	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	0	methanogenesis	methyl-coenzyme M reductase I subunit D	MRI, mcrBDCGA	methyl-CoM --> CH4 + CoM-S-S-CoB	mcrBDCGA	mcrD	no	K03422	NA	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	M00356, M00357, M00563, M00567	methanogenesis	methyl-coenzyme M reductase I gamma subunit	MRI, mcrBDCGA	methyl-CoM --> CH4 + CoM-S-S-CoB	mcrBDCGA	mcrG	yes	K00402	NA	0050524	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	0	methanogenesis	methyl-coenzyme M reductase II subunit alpha	MRII, mtr	methyl-CoM <--> CH4 + CoM-S-S-CoB	mtrEDCBA	mtrA	no	K00399	NA	0050524	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	0	methanogenesis	methyl-coenzyme M reductase II subunit beta	MRII, mtr	methyl-CoM <--> CH4 + CoM-S-S-CoB	mtrEDCBA	mtrB	no	K00401	NA	0050524	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	0	methanogenesis	methyl-coenzyme M reductase II subunit gamma	MRII, mtr	methyl-CoM <--> CH4 + CoM-S-S-CoB	mtrEDCBA	mtrG	no	K00402	NA	0050524	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	M00356, M00357, M00563, M00567	methanogenesis	coB-coM heterodisulfide oxidoreductase	hdrABCDE	CoM-S-S-CoB --> methyl-CoM (recycling)	hdrABCDE	hdrA1	yes	K22480	COG1148	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	M00356, M00357, M00563, M00568	methanogenesis	coB-coM heterodisulfide oxidoreductase	hdrABCDE	CoM-S-S-CoB --> methyl-CoM (recycling)	hdrABCDE	hdrA2	yes	K03388	COG1148	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	M00356, M00357, M00563, M00567	methanogenesis	coB-coM heterodisulfide oxidoreductase	hdrABCDE	CoM-S-S-CoB --> methyl-CoM (recycling)	hdrABCDE	hdrB1	no	K22481	COG2048	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	M00356, M00357, M00563, M00367	methanogenesis	coB-coM heterodisulfide oxidoreductase	hdrABCDE	CoM-S-S-CoB --> methyl-CoM (recycling)	hdrABCDE	hdrB2	no	K03389	COG2048	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	M00356, M00357, M00563, M00367	methanogenesis	coB-coM heterodisulfide oxidoreductase	hdrABCDE	CoM-S-S-CoB --> methyl-CoM (recycling)	hdrABCDE	hdrC1	no	K22482	COG1150	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	M00356, M00357, M00563, M00567	methanogenesis	coB-coM heterodisulfide oxidoreductase	hdrABCDE	CoM-S-S-CoB --> methyl-CoM (recycling)	hdrABCDE	hdrC2	no	K03390	COG1150	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	M00356, M00357, M00563, M00568	methanogenesis	CoB-CoM heterodisulfide reductase 	hdrABCDE	CoM-S-S-CoB + dihydromethanophenazine -->CoM + CoB + methanophenazine (recycling)	hdrABCDE	hdrD	no	K08264 	COG1150	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methyl-coM	M00356, M00357, M00563, M00567	methanogenesis	CoB-CoM heterodisulfide reductase,  b-type cytochrome	hdrABCDE	CoM-S-S-CoB + dihydromethanophenazine -->CoM + CoB + methanophenazine (recycling)	hdrABCDE	hdrE	no	K08265	COG1150	0051912	NA	NA	NA	NA
+yes	yes	methanogenesis	methanol	M00356, M00357, M00563, M00367	methanogenesis	methyl viologen-reducing hydrogenase F420-non-reducing hydrogenase iron-sulfur subunit 	mvhD, vhuD, vhcD	2 Reduced ferredoxin + 2 H+ <=> Hydrogen + 2 Oxidized ferredoxin / Coenzyme B + Coenzyme M + 2 Reduced ferredoxin + 2 H+ <=> Coenzyme M 7-mercaptoheptanoylthreonine-phosphate heterodisulfide + 2 Oxidized ferredoxin + 2 Hydrogen/ Coenzyme B + Coenzyme M + 2 Reduced ferredoxin + 2 CO2 + 2 H+ <=> Coenzyme M 7-mercaptoheptanoylthreonine-phosphate heterodisulfide + 2 Oxidized ferredoxin + 2 Format	mvhD	mvhD	no	K14126	COG1908	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanol	M00356, M00357, M00563, M00367	methanogenesis	methyl viologen-reducing hydrogenaseF420-non-reducing hydrogenase large subunit	mvhA	2 Reduced ferredoxin + 2 H+ <=> Hydrogen + 2 Oxidized ferredoxin / Coenzyme B + Coenzyme M + 2 Reduced ferredoxin + 2 H+ <=> Coenzyme M 7-mercaptoheptanoylthreonine-phosphate heterodisulfide + 2 Oxidized ferredoxin + 2 Hydrogen	mvhA	mvhA	yes	K14128	COG3259	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanol	M00356, M00357, M00563, M00367	methanogenesis	methyl viologen-reducing hydrogenase F420-non-reducing hydrogenase small subunit	"	
+mvhG, vhuG, vhcG"	3 Reduced ferredoxin + 2 H+ <=> Hydrogen + 2 Oxidized ferredoxin / Coenzyme B + Coenzyme M + 2 Reduced ferredoxin + 2 H+ <=> Coenzyme M 7-mercaptoheptanoylthreonine-phosphate heterodisulfide + 2 Oxidized ferredoxin + 2 Hydrogen	mvhG	mvhG	no	K14128	COG1941	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	formate	M00356, M00357, M00563, M00367		formate dehydrogenase (coenzyme F420) alpha subunit 	fdhA	"	
+Formate + Coenzyme F420 <=> CO2 + Reduced coenzyme F42 / Coenzyme B + Coenzyme M + 2 Reduced ferredoxin + 2 CO2 + 2 H+ <=> Coenzyme M 7-mercaptoheptanoylthreonine-phosphate heterodisulfide + 2 Oxidized ferredoxin + 2 Formate"	fdh	fdhA	no	K22516	COG3383	0043794	NA	NA	NA	NA
+yes	yes	methanogenesis	formate	M00356, M00357, M00563, M00367		formate dehydrogenase (coenzyme F420) beta subunit 	fdhB	"	
+Formate + Coenzyme F420 <=> CO2 + Reduced coenzyme F42 / Coenzyme B + Coenzyme M + 2 Reduced ferredoxin + 2 CO2 + 2 H+ <=> Coenzyme M 7-mercaptoheptanoylthreonine-phosphate heterodisulfide + 2 Oxidized ferredoxin + 2 Formate"	fdh	fdhB	no	K00125	COG1035	0043794	NA	NA	NA	NA
+yes	yes	methanogenesis	canonical methanogones CoM biosynthesis pathways   	M00358	 PEP-dependent pathway 	phosphosulfolactate (PSL) synthase	ComA	(2R)-2-O-phospho-3-sulfolactate = phosphoenolpyruvate + sulfite 	comA	comA	no	K08097	"	COG1809"	"	0043817"	NA	NA	NA	NA
+yes	yes	methanogenesis	canonical methanogones CoM biosynthesis pathways   	M00358	 PEP-dependent pathway 	2-phosphosulfolactate (PSL) phosphatase	ComB	(2R)-O-Phospho-3-sulfolactate + H2O <=> (2R)-3-Sulfolactate + Orthophosphate	comB	comB	no	K05979	COG2045	"	0050532"	NA	NA	NA	NA
+yes	yes	methanogenesis	canonical methanogones CoM biosynthesis pathways   	M00358	 PEP-dependent pathway 	sulfolactate dehydrogenase	ComC	(2R)-3-Sulfolactate + NAD+ <=> 3-Sulfopyruvate + NADH + H+	ComC	ComC	no	K05884	COG2055		NA	NA	NA	NA
+yes	yes	methanogenesis	canonical methanogones CoM biosynthesis pathways   		L-phosphoserine dependent	pyridoxal 5_- phosphate (PLP)-dependent cysteate synthase	Cs	O-phospho-L-serine + sulfite = L-cysteate + phosphate	cs	cs	no	K15527 	COG0498		NA	NA	NA	NA
+yes	yes	methanogenesis	canonical methanogones CoM biosynthesis pathways   		L-phosphoserine dependent	canonical PLP-dependent aspartate aminotransferase	aspAT	0	asp	aspAT	no	NA	NA	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	canonical methanogones CoM biosynthesis pathways   	M00358	Shared pathway from sylfopyruvate to CoM	thiamine pyrophosphate-dependent sulfopyruvate subunit beta 	ComDE	3-Sulfopyruvate <=> Sulfoacetaldehyde + CO2	comD	comD	no	K06034	COG4032	"	0050545"	NA	NA	NA	NA
+yes	yes	methanogenesis	canonical methanogones CoM biosynthesis pathways   	M00358	Shared pathway from sylfopyruvate to CoM	thiamine pyrophosphate-dependent sulfopyruvate subunit alpha 	ComDE	3-Sulfopyruvate <=> Sulfoacetaldehyde + CO2	comE	comE	no	K13039	COG0028	"	0050545"	NA	NA	NA	NA
+yes	yes	methanogenesis	 methanogones F420 biosynthesis pathways   	M00378 	"	
+F420 biosynthesis"	radical S-adenosylmethionine enzymes	cofGH/FbiC	5-amino-5-(4-hydroxybenzyl)-6-(D-ribitylimino)-5,6-dihydrouracil ammonia-lyase (7,8-didemethyl-8-hydroxy-5-deazariboflavin-forming)	cofG	cofG	no	K11780	COG1060	"	0044689"	pfam04055, pfam19288	NA	NA	NA
+yes	yes	methanogenesis	 methanogones F420 biosynthesis pathways   	M00378 	"	
+F420 biosynthesis"	radical S-adenosylmethionine enzymes	cofGH/FbiC	5-amino-6-(D-ribitylamino)uracil:L-tyrosine 4-hydroxybenzyltransferase	cofH	cofH	no	K11781	COG1060	"	0044689"	pfam04055	NA	NA	NA
+yes	yes	methanogenesis	 methanogones F420 biosynthesis pathways   	M00378 	"	
+F420 biosynthesis"	2-phospho-L-lactate/phosphoenolpyruvate guanylyltransferase 	cofC, fbiD	2-phospho-L-lactate/phosphoenolpyruvate guanylyltransferase 	cofC	cofC	yes	K14941	COG1920	"	0043814"	pfam01983 	NA	NA	NA
+yes	yes	methanogenesis	 methanogones F420 biosynthesis pathways   	M00378 	"	
+F420 biosynthesis"	2-phospho-L-lactate transferase	cofD	7,8-Didemethyl-8-hydroxy-5-deazariboflavin + (2S)-Lactyl-2-diphospho-5'-guanosine <=> Coenzyme F420-0 + GMP	cofD	cofD	no	K11212	COG0391	"	0043743"	pfam01933 	NA	NA	NA
+yes	yes	methanogenesis	 methanogones F420 biosynthesis pathways   	M00378 	"	
+F420 biosynthesis"	coenzyme F420-1:gamma-L-glutamate ligase 	cofE	   Coenzyme F420-0 + GTP + L-Glutamate <=> Coenzyme F420-1 + GDP + Orthophosphate	cofE	cofE	no	K12234	 COG1478	0052618, 0052619	pfam00881, pfam01996	NA	NA	NA
+yes	yes	methanogenesis	methanogenesis F420 reduction	0	F420 canonical regeneration (low H2 and high [Ni])	coenzyme F420-reducing  [NiFe] hydrogenase _ subunit (group 3)	frhADGB	hydrogen:coenzyme F420 oxidoreductase	frhADGB	FrhA	yes	K00440	COG3259	0050454	PF00374	NA	NA	NA
+yes	yes	methanogenesis	methanogenesis F420 reduction	0	F420 canonical regeneration (low H2 and high [Ni])	coenzyme F420-reducing  [NiFe] hydrogenase _ subunit (group 3)	frhADGB	hydrogen:coenzyme F420 oxidoreductase	frhADGB	FrhB	yes	K00441	COG1035	0050454	PF00374	NA	NA	NA
+yes	yes	methanogenesis	methanogenesis F420 reduction	0	F420 canonical regeneration (low H2 and high [Ni])	coenzyme F420-reducing  [NiFe] hydrogenase delta subunit (group 3)	frhADGB	hydrogen:coenzyme F420 oxidoreductase	frhADGB	FrhD	no	K00442	COG0680	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenesis F420 reduction	0	F420 canonical regeneration (low H2 and high [Ni])	coenzyme F420-reducing  [NiFe] hydrogenase _  subunit (group 3)	frhADGB	hydrogen:coenzyme F420 oxidoreductase	frhADGB	FrhG	yes	K00443	COG1941	0050454	PF00374	NA	NA	NA
+yes	yes	methanogenesis	methanogenesis coenzyme B/coenzyme M regeneration	0	coenzyme B/coenzyme M regeneration	F420H2 dehydrogenase subunit A 	FpoABCDI	 a reduced coenzyme F420 + methanophenazine --> oxidized coenzyme F420 + dihydromethanophenazine	fpoABCDI	fpoA	no	K22158	COG0838	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenesis coenzyme B/coenzyme M regeneration	0	coenzyme B/coenzyme M regeneration	F420H2 dehydrogenase subunit B	FpoABCDI	 a reduced coenzyme F420 + methanophenazine --> oxidized coenzyme F420 + dihydromethanophenazine	fpoABCDI	fpoB	yes	K22159	COG0377	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenesis coenzyme B/coenzyme M regeneration	0	coenzyme B/coenzyme M regeneration	F420H2 dehydrogenase subunit C	FpoABCDI	 a reduced coenzyme F420 + methanophenazine --> oxidized coenzyme F420 + dihydromethanophenazine	fpoABCDI	fpoC	no	K22160	COG0852	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenesis coenzyme B/coenzyme M regeneration	0	coenzyme B/coenzyme M regeneration	F420H2 dehydrogenase subunit D	FpoABCDI	 a reduced coenzyme F420 + methanophenazine --> oxidized coenzyme F420 + dihydromethanophenazine	fpoABCDI	fpoD	yes	K22161	COG0649	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenesis coenzyme B/coenzyme M regeneration	0	coenzyme B/coenzyme M regeneration	F420H2 dehydrogenase subunit I	FpoABCDI	 a reduced coenzyme F420 + methanophenazine --> oxidized coenzyme F420 + dihydromethanophenazine	fpoABCDI	fpoI	yes	K22164	COG1143	NA	NA	NA	NA	NA
+	yes	methanogenesis	methanogenesis coenzyme B/coenzyme M regeneration	0	coenzyme B/coenzyme M regeneration	F420H2 dehydrogenase subunit H	fpoH	 a reduced coenzyme F420 + methanophenazine --> oxidized coenzyme F420 + dihydromethanophenazine	fpoH	fpoH	no	K22163	COG1005	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenesis coenzyme B/coenzyme M regeneration	0	coenzyme B/coenzyme M regeneration	F420H2 dehydrogenase subunit F	FpoF	 a reduced coenzyme F420 + methanophenazine --> oxidized coenzyme F420 + dihydromethanophenazine	fpoF	fpoF	yes	K22162	COG1035	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes with cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase (group 4e)	echABCDEF	Ferredoxin reduction <--> Ferredoxin oxidation	EchA	EchA	no	K14086	NA	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes with cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase (group 4e)	echABCDEF	Ferredoxin reduction <--> Ferredoxin oxidation	EchB	EchB	no	K14087	COG0650	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes with cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase (group 4e)	echABCDEF	Ferredoxin reduction <--> Ferredoxin oxidation	EchC	EchC	no	K14088	COG3260	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes with cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase (group 4e)	echABCDEF	Ferredoxin reduction <--> Ferredoxin oxidation	EchD	EchD	no	K14089	NA	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes with cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase (group 4e)	echABCDEF	Ferredoxin reduction <--> Ferredoxin oxidation	EchE	EchE	no	K14090	COG3261	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes with cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase (group 4e)	echABCDEF	Ferredoxin reduction <--> Ferredoxin oxidation	EchF	EchF	no	K14091	COG1143	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes with cytochromes	0	energy conversion	methanophenazine-reducing [NiFe] hydrogenase (F420 non-reducing hydrogenase I) , large subunit	VhoGAC	Methanophenazine + Hydrogen <=> Dihydromethanophenazine	VhoA, vhtA	VhoA	no	K14068	COG0374	0051911	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes with cytochromes	0	energy conversion	methanophenazine-reducing [NiFe] hydrogenase, F420 non-reducing hydrogenase I, cytochrome b subunit	VhoGAC	Methanophenazine + Hydrogen <=> Dihydromethanophenazine	VhoC,vhtC	VhoC	no	K14069	COG2864	0051911	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes with cytochromes	0	energy conversion	methanophenazine-reducing [NiFe] hydrogenase, F420 non-reducing hydrogenase I, small subunit	VhoGAC	Methanophenazine + Hydrogen <=> Dihydromethanophenazine	VhoG, vhtG	VhoG	no	K14070	COG1740	0051911	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaA	EhaA	no	K14092	COG4042	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaB	EhaB	no	K14093	COG4041	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaC	EhaC	no	K14094	COG4040	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaD	EhaD	yes	K14095	COG4039	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaE	EhaE	yes	K14096	COG4038	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaF	EhaF	yes	K14097	COG4037	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaG	EhaG	yes	K14098	COG4036	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaH	EhaH	no	K14099	COG4078	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaI	EhaI	no	K14100	NA	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaJ	EhaJ	no	K14101	COG0650	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaK	EhaK	no	K14102	NA	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaL	EhaL	yes	K14103	COG4035	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaM	EhaM	no	K14104	COG4084	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaN	EhaN	no	K14105	COG3260	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaO	EhaO	no	K14106	COG3261	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaP	EhaP	no	K14107	COG1145	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaQ	EhaQ	no	K14108	COG1145	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase A (group 4f)	Eha cluster	interconversion of molecular H+ and H2 	EhaR	EhaR	no	K14109	COG4030	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H3	EhbA	EhbA	no	K14110	COG1863	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H4	EhbB	EhbB	no	K14111	COG2212	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H5	EhbC	EhbC	no	K14112	COG1320	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H6	EhbD	EhbD	no	K14113	COG1563	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H7	EhbE	EhbE	no	K14114	COG1006	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H8	EhbF	EhbF	no	K14115	COG0651	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H9	EhbG	EhbG	no	K14116	NA	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H10	EhbH	EhbH	no	K14117	COG2111	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H11	EhbI	EhbI	no	K14118	COG2111	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H12	EhbJ	EhbJ	no	K14119	NA	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H13	EhbK	EhbK	no	K14120	COG1145	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H14	EhbL	EhbL	no	K14121	COG1143	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H15	EhbM	EhbM	no	K14122	COG3260	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H16	EhbN	EhbN	no	K14123	COG3261	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H17	EhbO	EhbO	no	K14124	COG0650	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H18	EhbP	EhbP	no	K14125	NA	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogenes without cytochromes	0	energy conversion	energy-converting [NiFe] hydrogenase B (group 4i)	Ehb cluster	interconversion of molecular H+ and H19	EhbQ	EhbQ	no	K06862	COG1707	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogens coenzyme B biosynthesis 	M00608 	byosinthesis of cofactors	methanogen homocitrate synthase	aks 	acetyl-CoA:2-oxoglutarate C-acetyltransferase (thioester-hydrolysing, carboxymethyl forming)	aksA	aksA	no	K10977	COG0119	0004410	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogens coenzyme B biosynthesis 	M00609	byosinthesis of cofactors	methanogen homoaconitase large subunit	aks 	(1R,2S)-homoisocitrate _ cis-homoaconitate + H2O	aksD	aksD	no	K16792	COG0065	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	methanogens coenzyme B biosynthesis 	M00610	byosinthesis of cofactors	methanogen homoaconitase small subunit	aks 	(1R,2S)-homoisocitrate _ cis-homoaconitate + H2O	aksE	aksE	no	K16793	COG0066	NA	NA	NA	NA	NA
+		methanogenesis	methanogens coenzyme B biosynthesis 	M00611	byosinthesis of cofactors	methanogen homoisocitrate dehydrogenase	aks 	(1R,2S)-homoisocitrate + NAD+ _ 2-oxoadipate + CO2 + NADH	aksF	aksF	no	K10978	COG0473	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	 post-translational installation of thioglycine into McrA	0	methanogenesis	thioglycine synthase 	YcaO superfamily	 post-translational thioamidation of McrA	TvaH	TvaH	yes	K09136	COG1944	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	 post-translational installation of thioglycine into McrA	0	methanogenesis	TfuA-like protein 	TfuA protein	 post-translational thioamidation of McrA	TfuA	TfuA	no	K24410	COG3482	NA	NA	NA	NA	NA
+yes	yes	methanogenesis	fungi-halomethane dependent pathway	0		methyl chloride transferase 	MCT	Synthesis of CH3Cl from S-adenosyl-l-methionine (SAM) and/or Met	mct1,mct2	mct1	no	NA	NA	NA	OM864274	NA	NA	NA
+yes	yes	methanogenesis	fungi-halomethane dependent pathway	0		methyl chloride transferase 	MCT	Synthesis of CH3Cl from S-adenosyl-l-methionine (SAM) and/or Met	mct1,mct2	mct2	no	NA	NA	NA	OM864275 	NA	NA	NA
+yes	yes	methanogenesis	fungi-halomethane dependent pathway	0		methionine synthase	MS	Synthesis of SAM/Met	ms	ms	no	NA	NA	NA	OM864268, P42319	NA	NA	NA
+yes	yes	methanogenesis	fungi-halomethane dependent pathway	0		dehalogenase 	DH	Degradation of CH3Cl	dh1	dh1	no	NA	NA	NA	OM864272 	NA	NA	NA
+yes	yes	methanogenesis	fungi-halomethane dependent pathway	0		dehalogenase 	DH	Degradation of CH3Cl	dh2	dh2	no	NA	NA	NA	OM864269 	NA	NA	NA
+yes	yes	methanogenesis	fungi-halomethane dependent pathway	0		dehalogenase 	DH	Degradation of CH3Cl	dh3	dh3	no	NA	NA	NA	OM864270	NA	NA	NA
+yes	yes	methanogenesis	fungi-halomethane dependent pathway	0		dehalogenase 	DH	Degradation of CH3Cl	dh4	dh4	no	NA	NA	NA	OM864271	NA	NA	NA
+yes	yes	methanogenesis	fungi-halomethane dependent pathway	0		dehalogenase 	DH	Degradation of CH3Cl	dh5	dh5	no	NA	NA	NA	OM864273 	NA	NA	NA
+yes	yes	methanogenesis	Carbon Monooxide 	0		CO-dehydrogenating enzyme 	codh	reduction of F420 with CO	codh	codh	no					NA	NA	NA
+yes	yes	acetogenesis	NA	M00377	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	anaerobic carbon-monoxide dehydrogenase catalytic subunit 	cooS, acsA	carbon-monoxide,water:ferredoxin oxidoreductase	coo	cooS	yes	K00198	COG1151	0043885	NA	NA	NA	NA
+yes	yes	acetogenesis	NA	M00356, M00357, M00563, M00367	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	formate dehydrogenase (coenzyme F420) alpha subunit 	fdhA	"	
+Formate + Coenzyme F420 <=> CO2 + Reduced coenzyme F42 / Coenzyme B + Coenzyme M + 2 Reduced ferredoxin + 2 CO2 + 2 H+ <=> Coenzyme M 7-mercaptoheptanoylthreonine-phosphate heterodisulfide + 2 Oxidized ferredoxin + 2 Formate"	fdh	fdhA	no	K22516	COG3383	0043794	NA	NA	NA	NA
+yes	yes	acetogenesis	NA	M00356, M00357, M00563, M00367	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	formate dehydrogenase (coenzyme F420) beta subunit 	fdhB	"	
+Formate + Coenzyme F420 <=> CO2 + Reduced coenzyme F42 / Coenzyme B + Coenzyme M + 2 Reduced ferredoxin + 2 CO2 + 2 H+ <=> Coenzyme M 7-mercaptoheptanoylthreonine-phosphate heterodisulfide + 2 Oxidized ferredoxin + 2 Formate"	fdh	fdhB	no	K00125	COG1035	0043794	NA	NA	NA	NA
+yes	yes	acetogenesis	NA	M00377	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	formate dehydrogenase (hydrogenase)	fdhF	CO2 + Hydrogen <=> Formate	fdh	fdhF	yes	K22015	NA	NA	NA	NA	NA	NA
+yes	yes	acetogenesis	NA	M00377	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	iron hydrogenase HydA2	hydA2	CO2 + Hydrogen <=> Formate	hyd	hydA2	no	K25123	COG4624 COG1145	NA	NA	NA	NA	NA
+yes	yes	acetogenesis	NA	M00377	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	FeS-containing electron transfer protein	hycB	CO2 + Hydrogen <=> Formate	hycB	hycB	no	K25124	COG1142	NA	NA	NA	NA	NA
+yes	yes	acetogenesis	NA	M00377	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	formyl tetrahydrofolate synthetase	fhs	formate:tetrahydrofolate ligase (ADP-forming)	fhs	fhs	yes	K01938	COG2759	0004329	NA	NA	NA	NA
+yes	yes	acetogenesis	NA	M00377	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	methylenetetrahydrofolate dehydrogenase (NADP+)	folD	5,10-Methylenetetrahydrofolate + NADP+ <=> 5,10-Methenyltetrahydrofolate + NADPH	folD	folD	yes	K01491	COG0190	0004477	NA	NA	NA	NA
+yes	yes	acetogenesis	NA	M00377	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	methenyltetrahydrofolate cyclohydrolase	fchA	5,10-methenyltetrahydrofolate 5-hydrolase (decyclizing)	fchA	fchA	no	K01500	COG3404	0004477	NA	NA	NA	NA
+yes	yes	acetogenesis	NA	M00377	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	methylenetetrahydrofolate reductase (NADH)	metF	5-methyltetrahydrofolate:NAD+ oxidoreductase	met	metF	no	K00297	COG0685	0106312	NA	NA	NA	NA
+yes	yes	acetogenesis	NA	M00377	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	methylenetetrahydrofolate reductase (NADH) small subunit	metV	5-methyltetrahydrofolate:NAD+ oxidoreductase	metV	metV	no	K25007	NA	NA	NA	NA	NA	NA
+yes	yes	acetogenesis	NA	M00377	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	ion-translocating oxidoreductase complex subunit C	rnfC2		rnfC2	rnfC3	no	K25008 	COG4656	NA	NA	NA	NA	NA
+yes	yes	acetogenesis	NA	M00377	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	5-methyltetrahydrofolate corrinoid/iron sulfur protein methyltransferase	acsE	5-Methyltetrahydrofolate + Co(I) corrinoid protein + H+ <=> Methyl-Co(III) corrinoid protein + Tetrahydrofolate	acsE	acsE	no	K15023	NA	NA	NA	NA	NA	NA
+yes	yes	acetogenesis	NA	M00357	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	acetyl-CoA synthetase	acsB	Acetyl-CoA + Co(I) corrinoid protein + H+ <=> CO + Methyl-Co(III) corrinoid protein + CoA	acs	acs	no	K01895	COG0365	003987	NA	NA	NA	NA
+yes	yes	acetogenesis	NA	M00357, M00377, M00422	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	acetyl-CoA decarbonylase/synthase, CODH/ACS complex subunit gamma 	cdhDE	a[methy Co(III) corrinoid] FeS protrein to 5-methyl-H4MPT	cdhDE	cdhE	no	K00197	COG1456	NA	NA	NA	NA	NA
+yes	yes	acetogenesis	NA	M00357, M00377, M00422	Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway)	acetyl-CoA decarbonylase/synthase,CODH/ACS complex subunit delta	cdhDE	a[methy Co(III) corrinoid] FeS protrein to 5-methyl-H4MPT	cdhDE	cdhD	no	K00194	COG2069	NA	NA	NA	NA	NA
+yes	yes	methanotrophy 	NA	M00174	Methane oxidation	methane monooxygenase component A alpha chain	EC:1.14.13.25	CH4 + O2 + e => methanol	soluble MMO	mmoX	yes	K16157	NA	0015049	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00174	Methane oxidation	methane monooxygenase component A gamma chain	EC:1.14.13.25	CH4 + O2 + e => methanol	soluble MMO	mmoZ	no	K16159	NA	0015049	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00174	Methane oxidation	methane monooxygenase component C 	EC:1.14.13.25	CH4 + O2 + e => methanol	soluble MMO	mmoC	no	K16161	COG0543	0015049	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00174	Methane oxidation	methane monooxygenase regulatory protein B	0	CH4 + O2 + e => methanol	soluble MMO	mmoB	no	K16160	NA	NA	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00174	Methane oxidation	methane monooxygenase component A beta chain	EC:1.14.13.25	CH4 + O2 + e => methanol	soluble MMO	mmoY	no	K16158	NA	0015049	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00174, M00528, M00894	Methane oxidation	Methane Monooxygenasee subunit A	EC:1.14.18.3	CH4 + O2 + e => methanol	soluble MMO	pmoA	yes	K10944	NA	NA	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00174, M00528, M00894	Methane oxidation	Methane Monooxygenasee subunit B	EC:1.14.18.3	CH4 + O2 + e => methanol	particulate MMO	pmoB	no	K10945	NA	NA	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00174, M00528, M00894	Methane oxidation	Methane Monooxygenasee subunit C	EC:1.14.18.3	CH4 + O2 + e => methanol	particulate MMO	pmoC	no	K10946	NA	NA	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00174	Methanol oxidation	methanol dehydrogenase (cytochrome c) subunit 1	EC:1.1.2.7	methanol => formaldehyde + e ( pyrroloquinoline quinone (PQQ) as a cofactor)	canonical MDH	mxaF	yes	K14028	NA	0052930	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00174	Methanol oxidation	methanol dehydrogenase (cytochrome c) subunit 2	EC:1.1.2.7	methanol => formaldehyde + e ( pyrroloquinoline quinone (PQQ) as a cofactor)	canonical MDH	mxaI	yes	K14029	NA	NA	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	0	Methanol oxidation	Methanol Dehydrogenase accessory protein	0	methanol => formaldehyde + e ( pyrroloquinoline quinone (PQQ) as a cofactor)	canonical MDH	mxaJ	no	K16254	NA	NA	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	0	Methanol oxidation	Methanol Dehydrogenase large subunit (cytochrome c-L)	0	methanol => formaldehyde + e ( pyrroloquinoline quinone (PQQ) as a cofactor)	canonical MDH	mxaG	no	K16255	NA	NA	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00174	Methanol oxidation	Methanol Dehydrogenase 	0	methanol => formaldehyde + e ( pyrroloquinoline quinone (PQQ) as a cofactor)	canonical MDH	mxaD	no	K16260	NA	NA	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00174	Methanol oxidation	Methanol Dehydrogenase 	0	methanol => formaldehyde + e ( pyrroloquinoline quinone (PQQ) as a cofactor)	canonical MDH	mxaC	no	K16257	NA	NA	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00174	Methanol oxidation	Methanol Dehydrogenase 	0	methanol => formaldehyde + e ( pyrroloquinoline quinone (PQQ) as a cofactor)	canonical MDH	mxaK	no	K16258	NA	NA	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00174	Methanol oxidation	Methanol Dehydrogenase 	0	methanol => formaldehyde + e ( pyrroloquinoline quinone (PQQ) as a cofactor)	canonical MDH	mxaL	no	K16259	NA	NA	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00174	Methanol oxidation	Methanol Dehydrogenase 	0	methanol => formaldehyde + e ( pyrroloquinoline quinone (PQQ) as a cofactor)	canonical MDH	mxaA	no	K16256	NA	NA	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00174	Methanol oxidation	lanthanide-dependent methanol dehydrogenase	EC:1.1.2.10	methanol => formaldehyde + e ( pyrroloquinoline quinone (PQQ) as a cofactor)	lanthanide-dependent MDH	xoxF	no	K23995	COG4993	NA	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	0	Formaldehyde Oxidation	Formate Dehydrogenase (FDH)	EC:1.17.1.9	Formate => CO2	FDH	fdh	no	K00122	NA	0008863	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	0	Formaldehyde Oxidation		EC:1.17.1.9	Formate => CO3	FDH	fdhF, fdoG, fdwA	no	K00123	COG0243	0008863	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	0	Formaldehyde Oxidation		EC:1.17.1.9	Formate => CO4	FDH	fdsD	no	K00126	NA	0008863	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	0	Formaldehyde Oxidation		EC:1.17.1.9	Formate => CO5	FDH	fdwB	no	K22515	COG1894	0008863	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	0	Formaldehyde Oxidation	Formate Dehydrogenase (FDH)	EC:1.2.1.2	Formate => CO2	FDH	fdhB	no	NA	NA	NA	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	0	Formaldehyde Oxidation	Formate Dehydrogenase (FDH)	EC:1.2.1.46	formaldehyde => formate	FDH	fdhA	no	K00148	NA	0018467	NA	NA	NA	NA
+yes	yes	methanotrophy	NA		Formaldehyde Assimilation (RuMP and Serine Pathways)	3-Hexulose-6-phosphate Synthase (HPS)	EC:4.1.2.43	 formaldehyde + ribulose-5-phosphate => hexulose-6-phosphate.	HPS-PHI	hps	no	K13831	COG0269	0043801	NA	NA	NA	NA
+yes	yes	methanotrophy	NA		Formaldehyde Assimilation (RuMP and Serine Pathways)	6-Phospho-3-hexuloisomerase 	EC:5.3.1.27	 hexulose-6-phosphate => fructose-6-phosphate (enters central metabolic pathways)	HPS-PHI	phi	no	K13831	COG0684	0043800	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	"M00140, M00141,M00346,M00532 
+M00975 "	Formaldehyde Assimilation (RuMP and Serine Pathways)	Serine Hydroxymethyltransferase (SHMT)	EC:2.1.2.1	glycine =>serine (incorporation of formaldehyde into the serine pathway) 	SHMT	glyA	no	K00600	COG0112	0004372	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	0	Formaldehyde Assimilation (RuMP and Serine Pathways)	Hydroxypyruvate Reductase 	EC:1.1.1.81	hydroxypyruvate => glycerate (serine pathway)	HPR	hpr	no	K22982	COG0111	0016618	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	M00532	Formaldehyde Assimilation (RuMP and Serine Pathways)	Glycerate Kinase	EC:2.7.1.31	glycerate => 2-phosphoglycerate (serine pathway)	GLYCK	gck	no	K15918	COG4240	0008887	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	0	Electron Transport and Energy Conservation	Cytochrome c Oxidase	EC 7.1.1.9 	e transport chain methanotrophs	COX1	coxA	yes	K02274	COG0843	0004129	NA	NA	NA	NA
+yes	yes	methanotrophy	NA	0	Electron Transport and Energy Conservation	Quinoprotein Alcohol Dehydrogenase	0	May play a role in oxidizing various alcohols, including methanol	EXAa	exaA	yes	K00114	COG4993	0052934	NA	NA	NA	NA
+yes	yes	AOM (ANME-SRB)	NA	M00356, M00357, M00563, M00567	Methane Activation	Methyl-Coenzyme M Reductase	0	methane => form methyl-coenzyme M	mcrABC	mcrA	yes	K00399	NA	0050524	NA	NA	NA	NA
+yes	yes	AOM (ANME-SRB)	NA	M00356, M00357, M00563, M00567	Methane Activation	Methyl-Coenzyme M Reductase	0	methane => form methyl-coenzyme M	mcrABC	mcrB	yes	K00401	NA	0050524	NA	NA	NA	NA
+yes	yes	AOM (ANME-SRB)	NA	0	Methane Activation	Methyl-Coenzyme M Reductase	0	methane => form methyl-coenzyme M	mcrABC	mcrC	no	K03421	NA	NA	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	0	Aceylene fermetation	acetylene hydratase (AH)	EC 4.2.1.112	hydration of acetylene (C_H_) to form acetaldehyde		ahpC	yes	NA	NA	NA	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	0	Aceylene fermetation	acetylene hydratase (AH)	EC 4.2.1.113	hydration of acetylene (C_H_) to form acetaldehyde		ahpD	yes	NA	NA	NA	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	0	Aceylene fermetation	molybdate transport system substrate-binding protein	EC:2.4.2.31	hydration of acetylene (C_H_) to form acetaldehyde	modABC	modA	yes	K02020	COG0725	NA	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	0	Aceylene fermetation	molybdate transport system permease protein	0	Tungstate ( tungsten-pterin complex W-MTP cofactor AH) Transport and Processing	modABC	modB	no	K02018	COG4149	NA	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	0	Aceylene fermetation	molybdate transport system ATP-binding protein	EC:7.3.2.5	Tungstate ( tungsten-pterin complex W-MTP cofactor AH) Transport and Processing	modABC	modC	no	K02017	COG4148	0015412	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	0	Aceylene fermetation	molybdate transport system ATP-binding protein	EC:7.3.2.5	Tungstate ( tungsten-pterin complex W-MTP cofactor AH) Transport and Processing	modF	modF	no	K05776	COG1119	NA	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	0	Aceylene fermetation	tungstate transport system substrate-binding protein	0	Tungstate ( tungsten-pterin complex W-MTP cofactor AH) Transport and Processing	tupABC	tupA	no	K05772	COG2998	NA	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	0	Aceylene fermetation	tungstate transport system permease protein	0	Tungstate ( tungsten-pterin complex W-MTP cofactor AH) Transport and Processing	tupABC	tupB	no	NA	NA	NA	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	0	Aceylene fermetation	tungstate transport system ATP-binding protein	EC:7.3.2.6	Tungstate ( tungsten-pterin complex W-MTP cofactor AH) Transport and Processing	tupABC	tupC	no	NA	NA	NA	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	0	Aceylene fermetation		0	W-MTP biosynthesis	tupE	tupE	no	NA	NA	NA	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	M00880	Aceylene fermetation	GTP 3',8-cyclase MOCS1	EC 4.1.99.22 	W-MTP biosynthesis	moaABCDE	moaA	no	K03639	COG2896	0061798	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	M00880	Aceylene fermetation	molybdopterin adenylyltransferase MOCS1	EC:2.7.7.75	W-MTP biosynthesis	moaABCDE	moaB	no	K03638	COG0521	0061598	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	M00880	Aceylene fermetation	cyclic pyranopterin monophosphate synthase	EC:4.6.1.17	W-MTP biosynthesis	moaABCDE	moaC	no	K03637	COG0315	0061799	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	0	Aceylene fermetation	molybdopterin synthase sulfur carrier subunit MOCS2A	0	W-MTP biosynthesis	moaABCDE	moaD	no	K03636	COG1977		NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	M00880	Aceylene fermetation	molybdopterin synthase catalytic subunit MOCS2B	EC:2.8.1.12	W-MTP biosynthesis	moaABCDE	moaE	no	K03635	COG0314	0030366	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	0	Aceylene fermetation		0	W-MTP insertion 	tupF	tupF	no	NA	NA	NA	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	0	Aceylene fermetation	molybdopterin-guanine dinucleotide biosynthesis adapter protein	0	W-MTP insertion 	mobB	mobB	no	K03753	COG1763	NA	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	0	Aceylene fermetation		0	W-MTP insertion 	mog	mog	no	NA	NA	NA	NA	NA	NA	NA
+yes	no	Aceylene fermetation	NA	0	Aceylene fermetation		0	W-MTP insertion and maduration	moeA	moeA	no	NA	NA	NA	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Transport and Reduction Complexes	Outer Membrane Cytochromes	0	Multiheme cytochromes involved in electron transport to extracellular Fe__	decaheme c-type cytochrome, OmcA/MtrC family	omcA	yes	NA	NA	NA	NA	EGC82_06255	A0A3G8LS90	AZG72411
+yes	no	Dissimilatory iron reduction	NA	0	Electron Transport and Reduction Complexes	Outer Membrane Cytochromes	0	Multiheme cytochromes involved in electron transport to extracellular Fe__	C-type polyheme cytochrome OmcC	omcB	no	NA	NA	NA	NA	A2G06_03965	NA	ANA39660
+yes	no	Dissimilatory iron reduction	NA	0	Electron Transport and Reduction Complexes	Outer Membrane Cytochromes	0	Multiheme cytochromes involved in electron transport to extracellular Fe__ 	decaheme cytochrome c MtrA	mtrA	yes	NA	NA	NA	NA	ALSL_2253	A0A2Z6E8P3	BBD80879
+yes	no	Dissimilatory iron reduction	NA	0	Electron Transport and Reduction Complexes	Outer Membrane Cytochromes	0	Multiheme cytochromes involved in electron transport to extracellular Fe__ 	MtrB/PioB family decaheme-associated outer membrane protein	mtrB	yes	NA	NA	NA	NA	FKV23_08000	A0A514BRP4	QDH70046
+yes	no	Dissimilatory iron reduction	NA	0	Electron Transport and Reduction Complexes	Outer Membrane Cytochromes	0	Multiheme cytochromes involved in electron transport to extracellular Fe__ 	OmcA/MtrC family decaheme c-type cytochrome	mtrC	yes	NA	NA	NA	NA	KNV97_10130	A0A975UB48	QXO18598
+yes	no	Dissimilatory iron reduction	NA	0	Electron Transport and Reduction Complexes	C-Type Cytochromes	0	Transfer electrons across the periplasmic space to outer membrane proteins 	NapC/NirT family cytochrome c CymA	cymA	yes	NA	NA	NA	NA	MKD32_19700	NA	UML93605
+yes	no	Dissimilatory iron reduction	NA	0	Electron Transport and Reduction Complexes	C-Type Cytochromes	0	Transfer electrons across the periplasmic space to outer membrane proteins 	cytochrome c	cyc1	no	K08738	COG3474	NA	NA	T30231:1739	A0A8B8UU75	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Transport and Reduction Complexes	C-Type Cytochromes	0	Transfer electrons across the periplasmic space to outer membrane proteins 	cytochrome c	cyc2	no	K20150	NA	NA	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Transport and Reduction Complexes	Periplasmic Cytochrome	0	Electron transfer between inner membrane cytochromes and outer membrane complexes.	cytochrome c	ppcA	no	NA	NA	NA	NA	GSU0612	AAR33943	G5EBD6
+yes	no	Dissimilatory iron reduction	NA	0	Electron Transport and Reduction Complexes	Membrane-bound Hydrogenase	EC:1.12.7.2	Oxidizes molecular hydrogen, providing electrons for the reduction of iron and other terminal electron acceptors	membrane-bound hydrogenase subunit alpha	mbhL/hyaA	yes	K18016	NA	008901	NA	A2SS23	A0A2X3K4L1	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Transport and Reduction Complexes	Membrane-bound Hydrogenase	EC:1.12.7.2	Oxidizes molecular hydrogen, providing electrons for the reduction of iron and other terminal electron acceptors	membrane-bound hydrogenase subunit beta	mbhK/hyaB	yes	K18017	NA	008901	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Transport and Reduction Complexes	Membrane-bound Hydrogenase	EC:1.12.7.2	Oxidizes molecular hydrogen, providing electrons for the reduction of iron and other terminal electron acceptors	 membrane-bound hydrogenase subunit mbhJ 	mbhJ	no	K18023	NA	008901	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Transport and Reduction Complexes	Membrane-bound Hydrogenase	0	Oxidizes molecular hydrogen, providing electrons for the reduction of iron and other terminal electron acceptors		hyd	no	NA	NA	NA	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Transport and Reduction Complexes	Membrane-bound Hydrogenase	EC:1.12.7.2	Oxidizes molecular hydrogen, providing electrons for the reduction of iron and other terminal electron acceptors		hox	no	NA	NA	NA	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Donor Utilization	NADH Dehydrogenase (Complex I)	EC 7.1.1.2	e transfer from NADH to the quinone pool, linking carbon metabolism to electron transport. Aerobic bacteria	NADH-quinone oxidoreductase subunit A	nuoA	no	K00330	COG0838	0008137	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Donor Utilization	NADH Dehydrogenase (Complex I)	EC 7.1.1.2	e transfer from NADH to the quinone pool, linking carbon metabolism to electron transport. Aerobic bacteria	NADH-quinone oxidoreductase subunit B	nuoB	no	K00331	COG0377	0008137	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Donor Utilization	NADH Dehydrogenase (Complex I)	EC 7.1.1.2	e transfer from NADH to the quinone pool, linking carbon metabolism to electron transport. Aerobic bacteria	NADH-quinone oxidoreductase subunit C	nuoC	no	K00332	COG0852	0008137	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Donor Utilization	NADH Dehydrogenase (Complex I)	EC 7.1.1.2	e transfer from NADH to the quinone pool, linking carbon metabolism to electron transport. Aerobic bacteria	NADH-quinone oxidoreductase subunit D	nuoD	no	K00333	COG0649	0008137	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Donor Utilization	NADH Dehydrogenase (Complex I)	EC 7.1.1.2	e transfer from NADH to the quinone pool, linking carbon metabolism to electron transport. Aerobic bacteria	NADH-quinone oxidoreductase subunit E	nuoE	no	K00334	COG1905	0008137	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Donor Utilization	NADH Dehydrogenase (Complex I)	EC 7.1.1.2	e transfer from NADH to the quinone pool, linking carbon metabolism to electron transport. Aerobic bacteria	NADH-quinone oxidoreductase subunit F	nuoF	no	K00335	COG1894	0008137	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Donor Utilization	NADH Dehydrogenase (Complex I)	EC 7.1.1.2	e transfer from NADH to the quinone pool, linking carbon metabolism to electron transport. Aerobic bacteria	NADH-quinone oxidoreductase subunit G	nuoG	no	K00336	COG1034	0008137	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Donor Utilization	NADH Dehydrogenase (Complex I)	EC 7.1.1.2	e transfer from NADH to the quinone pool, linking carbon metabolism to electron transport. Aerobic bacteria	NADH-quinone oxidoreductase subunit H	nuoH	no	K00337	COG1005	0008137	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Donor Utilization	NADH Dehydrogenase (Complex I)	EC 7.1.1.2	e transfer from NADH to the quinone pool, linking carbon metabolism to electron transport. Aerobic bacteria	NADH-quinone oxidoreductase subunit I	nuoI	no	K00338	COG1143	0008137	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Donor Utilization	NADH Dehydrogenase (Complex I)	EC 7.1.1.2	e transfer from NADH to the quinone pool, linking carbon metabolism to electron transport. Aerobic bacteria	NADH-quinone oxidoreductase subunit J	nuoJ	no	K00339	COG0839	0008137	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Donor Utilization	NADH Dehydrogenase (Complex I)	EC 7.1.1.2	e transfer from NADH to the quinone pool, linking carbon metabolism to electron transport. Aerobic bacteria	NADH-quinone oxidoreductase subunit K	nuoK	no	K00340	COG0713	0008137	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Donor Utilization	NADH Dehydrogenase (Complex I)	EC 7.1.1.2	e transfer from NADH to the quinone pool, linking carbon metabolism to electron transport. Aerobic bacteria	NADH-quinone oxidoreductase subunit L	nuoL	no	K00341	COG1009	0008137	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Donor Utilization	NADH Dehydrogenase (Complex I)	EC 7.1.1.2	e transfer from NADH to the quinone pool, linking carbon metabolism to electron transport. Aerobic bacteria	NADH-quinone oxidoreductase subunit M	nuoM	no	K00342	COG1008	0008137	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Donor Utilization	NADH Dehydrogenase (Complex I)	EC 7.1.1.2	e transfer from NADH to the quinone pool, linking carbon metabolism to electron transport. Aerobic bacteria	NADH-quinone oxidoreductase subunit N	nuoN	no	K00343	COG1007	0008137	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	M00009, M00011, M00148	Electron Donor Utilization	Succinate Dehydrogenase (Complex II)	EC:1.3.5.1	Oxidizes succinate to fumarate, feeding electrons into the electron transport chain.	succinate dehydrogenase (ubiquinone) flavoprotein subunit 	sdhA	no	K00234	COG1053	0008177	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	M00009, M00011, M00148	Electron Donor Utilization	Succinate Dehydrogenase (Complex II)	EC:1.3.5.1	Oxidizes succinate to fumarate, feeding electrons into the electron transport chain.	succinate dehydrogenase (ubiquinone) iron-sulfur subunit 	sdhB	no	K00235	COG0479	0008177	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	M00009, M00011, M00148	Electron Donor Utilization	Succinate Dehydrogenase (Complex II)	EC:1.3.5.1	Oxidizes succinate to fumarate, feeding electrons into the electron transport chain.	succinate dehydrogenase (ubiquinone) cytochrome b560 subunit	sdhC	no	K00236	COG2009	NA	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	M00009, M00011, M00148	Electron Donor Utilization	Succinate Dehydrogenase (Complex II)	EC:1.3.5.1	Oxidizes succinate to fumarate, feeding electrons into the electron transport chain.	succinate dehydrogenase (ubiquinone) membrane anchor subunit	sdhD	no	K00237	COG2142	NA	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Shuttles and Mediators	Flavin-Based Electron Shuttles	0	 Flavins (e.g., riboflavin, flavin mononucleotide) can act as electron carriers, transferring electrons from cytochromes to iron oxides		bfe	no				NA			
+yes	no	Dissimilatory iron reduction	NA	0	Electron Shuttles and Mediators	Flavin-Based Electron Shuttles	EC:1.16.3.1	 Flavins (e.g., riboflavin, flavin mononucleotide) can act as electron carriers, transferring electrons from cytochromes to iron oxides		bfr	no	K03594	COG2193	0004322	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Electron Shuttles and Mediators	Flavin-Based Electron Shuttles	0	 Flavins (e.g., riboflavin, flavin mononucleotide) can act as electron carriers, transferring electrons from cytochromes to iron oxides		flr	no				NA			
+yes	no	Dissimilatory iron reduction	NA	0	Nanowires (Pili Structures)	Pili Structures	0	Pili (Geobacter)	type IV pilus assembly protein PilA	pilA	no	K02650	COG2165	NA	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Supporting Enzymes and Electron Flow Regulation	quinone-interacting cytochrome complexes	EC:1.97.-.-	Mediate electron transfer between inner membrane quinones and outer membrane cytochromes	menaquinone reductase, multiheme cytochrome c subunit	qrcA	no	K23300	NA	NA	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Supporting Enzymes and Electron Flow Regulation	quinone-interacting cytochrome complexes	EC:1.97.-.-	Mediate electron transfer between inner membrane quinones and outer membrane cytochromes	menaquinone reductase, molybdopterin-binding-like subunit	qrcB	no	K23302	COG0243	NA	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Supporting Enzymes and Electron Flow Regulation	quinone-interacting cytochrome complexes	EC:1.97.-.-	Mediate electron transfer between inner membrane quinones and outer membrane cytochromes	menaquinone reductase, iron-sulfur cluster-binding subunit	qrcC	no	K23301	COG0437	NA	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Supporting Enzymes and Electron Flow Regulation	quinone-interacting cytochrome complexes	EC:1.97.-.-	Mediate electron transfer between inner membrane quinones and outer membrane cytochromes	menaquinone reductase, integral membrane subunit	qrcD	no	K23303	COG5557	NA	NA	NA	NA	NA
+yes	no	Dissimilatory iron reduction	NA	0	Supporting Enzymes and Electron Flow Regulation	Ferredoxin	0	 Transfer electrons from various metabolic reactions to components of the electron transport chain		fdx	no	K04755	COG0633	NA	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	M00529, M00530	NO3-dependent Iron Oxidation 	Nap-type Nitrate Reductase (napEDABC)	EC:1.9.6.1	nitrate => nitrite (low affinity)	nitrate reductase (cytochrome) 	napA	yes	K02567	NA	NA	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	M00529, M00530	NO3-dependent Iron Oxidation 	Nap-type Nitrate Reductase (napEDABC)	0	nitrate => nitrite (low affinity)	nitrate reductase (cytochrome), electron transfer subunit	napB	no	K02568	COG3043	NA	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	M00529, M00530	NO3-dependent Iron Oxidation 	Nap-type Nitrate Reductase (napEDABC)	0	nitrate => nitrite (low affinity)	cytochrome c-type protein NapC	napC	no	K02569	COG3005	NA	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	M00529, M00530	NO3-dependent Iron Oxidation 	Nap-type Nitrate Reductase (napEDABC)	0	nitrate => nitrite (low affinity)	periplasmic nitrate reductase	napD	no	K02570	COG3062	NA	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	M00529, M00531	NO3-dependent Iron Oxidation 	Nap-type Nitrate Reductase (napEDABC)	0	nitrate => nitrite (low affinity)	periplasmic nitrate reductase	napE	no	K02571	NA	NA	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	M00529, M00530	NO3-dependent Iron Oxidation 	Nap-type Nitrate Reductase ? (napG)	0	nitrate => nitrite (low affinity)	ferredoxin-type protein	napG	no	K02573	COG1145	0008940	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	"M00529, M00530, 
+M00804"	NO3-dependent Iron Oxidation 	Nar-type nitrate reductase (narGHJI)	EC:1.7.5.1	nitrate => nitrite (high affinity)	nitrate reductase alpha subunit	narG	yes	K00370	COG5013	0008940	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	"M00529, M00530, 
+M00804"	NO3-dependent Iron Oxidation 	Nar-type nitrate reductase (narGHJI)	EC:1.7.5.1	nitrate => nitrite (high affinity)	nitrate reductase beta subunit	narH	yes	K00371	COG1140	0008940	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	"M00529, M00530, 
+M00804"	NO3-dependent Iron Oxidation 	Nar-type nitrate reductase (narGHJI)	EC:1.7.5.1	nitrate => nitrite (high affinity)	nitrate reductase gamma subunit	narI	yes	K00374	COG2181	0008940	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	"M00529, M00530, 
+M00804"	NO3-dependent Iron Oxidation 	Nar-type nitrate reductase (narGHJI)	EC:1.7.5.1	nitrate => nitrite (high affinity)	nitrate reductase molybdenum cofactor assembly chaperone	narJ	no	K00373	COG2180	NA	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	M00529 , M00973	NO3-dependent Iron Oxidation 	Nitrite Reductase 	EC:1.7.2.1	nitrite => nitric oxide	nitrite reductase (NO-forming)	nirS	yes	K15864	COG2010	0050421	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	M00529 , M00973	NO3-dependent Iron Oxidation 	Nitrite Reductase 	EC:1.7.2.1	nitrite => nitric oxide	nitrite reductase (NO-forming)	nirK	no	K00368	NA	0016666	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	M00530	NO3-dependent Iron Oxidation 	Cytochrome c Nitrite Reductase	EC:1.7.2.2	reduces nitrite further, potentially leading to the production of ammonia.	nitrite reductase (cytochrome c-552)	nrfA	yes	K03385	COG3303	0042279	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	0	NO3-dependent Iron Oxidation 	Cytochrome c Nitrite Reductase	EC:1.7.2.2	reduces nitrite further, potentially leading to the production of ammonia.	cytochrome c-type protein NrfB	nrfB	no	K04013	NA	NA	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	0	NO3-dependent Iron Oxidation 	C-Type Cytochromes	0	Transfer electrons across the periplasmic space to outer membrane proteins 	cytochrome c	cyc2	yes	K20150	NA	NA	NA	NA	NA	NA
+yes	yes	NO3-dependent Iron Oxidation 	NA	0	NO3-dependent Iron Oxidation 	C-Type Cytochromes	0	Transfer electrons across the periplasmic space to outer membrane proteins 	NapC/NirT family cytochrome c CymA	cymA	yes	NA	NA	NA	NA	MKD32_19700	NA	UML93605
+yes	yes	sulfate reduction	Dissimilatory Sulfate Reduction	M00616 	sulfate uptake	ABC-type sulfate transporters	0	sulfate permease complex	sul	sulP	no	K03321	COG0659	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	Dissimilatory Sulfate Reduction	M00616 	sulfate uptake	ABC-type sulfate transporters	0	"sulfate permease complex; Sulfate/thiosulfate transport system substrate-binding protein"	cys	cysP	no	K02048	COG4150	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	Dissimilatory Sulfate Reduction	M00616 	sulfate uptake	ABC-type sulfate transporters	0	sulfate permease complex	cys	cysT	no	K02046	COG0555	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	Dissimilatory Sulfate Reduction	M00616 	sulfate uptake	ABC-type sulfate transporters	0	sulfate permease complex	cys	cysW	no	K02047	COG4208	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	Sulfate Reduction		sulfate activation	sulfate adenylyltransferase	EC:2.7.7.4	sulfate => APS (activation)=> sulfite (reduction) 	sat	sat	yes	K00958	COG2046	0004781	NA	NA	NA	NA
+yes	yes	sulfate reduction	Dissimilatory Sulfate Reduction	M00596	sulfate activation	APS reductase	EC:1.8.99.2	sulfate => APS (activation)=> sulfite (reduction) 	aprAB	aprA	yes	K00394	NA	0009973	NA	NA	NA	NA
+yes	yes	sulfate reduction	Dissimilatory Sulfate Reduction	M00596	sulfate activation	APS reductase	EC:1.8.99.2	sulfate => APS (activation)=> sulfite (reduction) 	aprAB	aprB	yes	K00395	NA	0009973	NA	NA	NA	NA
+yes	yes	sulfate reduction	Dissimilatory Sulfate Reduction	M00596	sulfate reduction 	Dissimilatory sulfite reductase	EC:1.8.1.22	sulfite (SO___) => sulfide (H_S	dsrAB	dsrA	yes	K11180	COG2221	0018551	NA	NA	NA	NA
+yes	yes	sulfate reduction	Dissimilatory Sulfate Reduction	M00596	sulfate reduction 	Dissimilatory sulfite reductase	EC:1.8.1.22	sulfite (SO___) => sulfide (H_S	dsrAB	dsrB	yes	K11181	COG2221	0018551	NA	NA	NA	NA
+yes	yes	sulfate reduction	 Sulfate Reduction	0	Electron Transfer in Sulfate Reduction:	quinone-interacting membrane-bound oxidoreductase (Qmo complex)	0	electron transfer to APS reductase during the reduction of APS to sulfite.	qmoABC	qmoA	yes	K16885	COG1148	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	 Sulfate Reduction	0	Electron Transfer in Sulfate Reduction:	quinone-interacting membrane-bound oxidoreductase ((Qmo complex))	0	electron transfer to APS reductase during the reduction of APS to sulfite.	qmoABC	qmoB	yes	K16886	COG1148	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	 Sulfate Reduction	0	Electron Transfer in Sulfate Reduction:	quinone-interacting membrane-bound oxidoreductase ((Qmo complex))	0	electron transfer to APS reductase during the reduction of APS to sulfite.	qmoABC	qmoC	yes	K16887	COG1147	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	 Sulfate Reduction	M00596	Electron Transfer in Sulfate Reduction:	Dsr complex [DsrC]-trisulfide reductase subunit M	EC:1.8.5.10	electron transport to the dissimilatory sulfite reductase complex for sulfite reduction.	 dsrMKJOP	dsrM	no	K27187	COG2181	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	 Sulfate Reduction	M00596	Electron Transfer in Sulfate Reduction:	Dsr complex [DsrC]-trisulfide reductase subunit K	EC:1.8.5.10	electron transport to the dissimilatory sulfite reductase complex for sulfite reduction.	 dsrMKJOP	dsrK	no	K27188	COG0247	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	 Sulfate Reduction	M00596	Electron Transfer in Sulfate Reduction:	Dsr complex	0	electron transport to the dissimilatory sulfite reductase complex for sulfite reduction.	 dsrMKJOP	dsrJ	no	K27189	NA	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	 Sulfate Reduction	M00596	Electron Transfer in Sulfate Reduction:	Dsr complex		electron transport to the dissimilatory sulfite reductase complex for sulfite reduction.	 dsrMKJOP	dsrO	no	K27190	COG0437	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	 Sulfate Reduction	M00596	Electron Transfer in Sulfate Reduction:	Dsr complex		electron transport to the dissimilatory sulfite reductase complex for sulfite reduction.	 dsrMKJOP	dsrP	no	K27191	COG5557	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	 Sulfate Reduction		Electron Transfer in Sulfate Reduction:	dissimilatory sulfite reductase related protein		transferring electrons to sulfite during sulfite reduction.	dsrC	dsrC	no	K23077	COG2920	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	 Sulfate Reduction	M00356, M00357, M00563, M00567 	E conservation 	heterodisulfide reductase-like proteins	EC:1.8.7.3	nergy conservation in some sulfate reducers	hdrABC	hdrA	yes	K22480	COG1148	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	 Sulfate Reduction	M00356, M00357, M00563, M00567 	E conservation 	heterodisulfide reductase-like proteins		nergy conservation in some sulfate reducers	hdrABC	hdrB	no	K22481	COG2048	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	 Sulfate Reduction	M00356, M00357, M00563, M00567 	E conservation 	heterodisulfide reductase-like proteins		nergy conservation in some sulfate reducers	hdrABC	hdrC	no	K22482	COG1150	NA	NA	NA	NA	NA
+yes	yes	sulfate reduction	Assimilatory Sulfate Reduction	M00176 	APS Reduction to Sulfite	Phosphoadenosine phosphosulfate (PAPS) reductase 	EC 1.8.4.8	Reduces PAPS to sulfite	cysH	cysH 	no	K00390	COG0175	0004604	NA	NA	NA	NA
+yes	yes	sulfate reduction	Assimilatory Sulfate Reduction	M00176 	Sulfite Reduction to Sulfide	Assimilatory  sulfite reductase (NADPH) flavoprotein alpha-component 	EC 1.8.1.2	sulfite => sulfide (incorporated into organic molecules, such as cysteine)	cysJI	cysJ	no	K00380	COG0369	0004783	NA	NA	NA	NA
+yes	yes	sulfate reduction	Assimilatory Sulfate Reduction	M00176 	Sulfite Reduction to Sulfide	Assimilatory sulfite reductase (NADPH) hemoprotein beta-component	EC 1.8.1.3	sulfite => sulfide (incorporated into organic molecules, such as cysteine)	cysJI	cysI	no	K00381	COG0155	0004783	NA	NA	NA	NA
+no	yes	ammonia-oxidazing			Ammonia Oxidation to Hydroxylamine	Ammonia Monooxygenase (AMO)  subunit A	EC:1.14.99.39	ammonia => hydroxylamine (NH_OH)	amoABC	amoA	yes	K10944	NA	NA	NA	NA	NA	NA
+no	yes	ammonia-oxidazing			Ammonia Oxidation to Hydroxylamine	Ammonia Monooxygenase (AMO) subunit B	EC:1.14.99.39	ammonia => hydroxylamine (NH_OH)	amoABC	amoB	yes	K10945	NA	NA	NA	NA	NA	NA
+no	yes	ammonia-oxidazing			Ammonia Oxidation to Hydroxylamine	Ammonia Monooxygenase (AMO) subunit C	EC:1.14.99.39	ammonia => hydroxylamine (NH_OH)	amoABC	amoC	yes	K10946	NA	NA	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		M00528, M00804	Oxidation of Hydroxylamine to Nitrite	Hydroxylamine Oxidoreductase (HAO)	EC:1.7.2.6	hydroxylamine => nitrite, transferring electrons to the electron transport chain.	hap	hao	yes	K10535	NA	0047991	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		M00153	e transport	cytochrome bd ubiquinol oxidase subunit II	EC:7.1.1.7	e transfer to chain	cydAB	cydA	no	K00425	COG1271	NA	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		M00153	e transport	cytochrome bd ubiquinol oxidase subunit I	EC:7.1.1.7	e transfer to chain	cydAB	cydB	no	K00426	COG1294	NA	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		M00529, M00973	Supporting Genes	nitrate reductase NirS - cytochrome cd1 type	EC:1.7.2.1	nitrite => nitric oxide (NO)	nirS	nirS	no	K15864	COG2010	0050421	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		M00529, M00973	Supporting Genes	nitrate reductase NirK - copper-containing	EC:1.7.2.2	nitrite => nitric oxide (NO)	nirK	nirK	no	K00368	NA	0016666	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		M00978	Ammonia assimilation	Glutamine synthetase	EC:6.3.1.2	Converts glutamate and ammonia to glutamine	glnA	glnA	no	K01915	COG0174	0004356	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		0	Ammonia assimilation	Glutamate synthase	EC:1.4.1.13 	Converts glutamine and _-ketoglutarate to glutamate	gltB,	gltB,	no	K00265	COG0067, COG0069, COG0070	0004355	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		0	Ammonia assimilation	Glutamate synthase	EC:1.4.1.13 	Converts glutamine and _-ketoglutarate to glutamate	gltD	gltD	no	K00266	COG0493	0004355	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		0	Ammonia assimilation	Glutamate dehydrogenase	EC:1.4.1.4	Converts _-ketoglutarate and ammonia to glutamate	gdhA	gdhA	no	K00262	COG0334	0004354	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		M00051,M00978	Biosynthesis	Carbamoyl-phosphate synthetase	EC:6.3.5.5	Converts ammonia and bicarbonate to carbamoyl-phosphate	carA	carA	no	K01956	COG0505	0004088	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		M00051,M00978	Biosynthesis	Carbamoyl-phosphate synthetase	EC:6.3.5.5	Converts ammonia and bicarbonate to carbamoyl-phosphate	carB	carB	no	K01955	COG0458	0004088	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		0	Ammonia release	urease subunit gamma	EC:3.5.1.5	Hydrolyzes urea to produce ammonia	ureABC	ureA	no	K01430	COG0831	0009039	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		0	Ammonia release	Urease subunit beta	EC:3.5.1.5	Hydrolyzes urea to produce ammonia	ureABC	ureB	no	K01429	COG0832	0009039	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		0	Ammonia release	Urease subunit alpha	EC:3.5.1.5	Hydrolyzes urea to produce ammonia	ureABC	ureC	no	K01428	COG0804	0009039	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		0	Ammonia release	Urease accessory protein	0	Hydrolyzes urea to produce ammonia	ureDEFGH	ureD	no	K03190	NA	NA	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		0	Ammonia release	Urease accessory protein	0	Hydrolyzes urea to produce ammonia	ureDEFGH	ureE	no	K03187	COG2371	NA	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		0	Ammonia release	Urease accessory protein	0	Hydrolyzes urea to produce ammonia	ureDEFGH	ureF	no	K03188	COG0830	NA	NA	NA	NA	NA
+no	yes	ammonia-oxidazing		0	Ammonia release	Urease accessory protein	0	Hydrolyzes urea to produce ammonia	ureDEFGH	ureG	no	K03189	COG0378	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		M00163	photosystem II	PSB	EC:1.97.1.12		photosystem I P700 chlorophyll a apoprotein A1	psbA	no	K02689	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		M00163	photosystem II	PSB	EC:1.97.1.12		photosystem I P700 chlorophyll a apoprotein A2	psbB	no	K02690	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		M00163	photosystem II	PSB	EC:1.97.1.12		photosystem I iron-sulfur center	psbC	no	K02691	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		M00163	photosystem II	PSB	EC:1.97.1.12		photosystem I subunit II	psbD	no	K02692	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		M00163	photosystem II	PSA	EC:1.10.3.9		photosystem II P680 reaction center D1 protein	psaA	no	K02703	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		M00161 	photosystem P700	PSA	EC:1.10.3.9		photosystem II CP47 chlorophyll apoprotein	psaB	no	K02704	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		M00161 	photosystem P700	PSA	EC:1.10.3.9		photosystem II CP43 chlorophyll apoprotein	psaC	no	K02705	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		M00161 	photosystem P700	PSA	EC:1.10.3.9		photosystem II P680 reaction center D2 protein	psaD	no	K02706	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		M00161 	photosystem P700	PSA	EC:1.10.3.9		photosystem II cytochrome b559 subunit alpha	psaE	no	K02707	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		M00161 	photosystem P700	PSA	EC:1.10.3.9		photosystem II cytochrome b559 subunit beta	psaF	no	K02708	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		0	Phycocyanin		0	Absorbs orange-red light.	phycocyanin alpha chain	cpcA	no	K02284	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		0	Phycocyanin		0	Absorbs orange-red light.	phycocyanin beta chain	cpcB	no	K02285	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		0	Phycocyanin		0	Absorbs orange-red light.	phycocyanin-associated rod linker protein	cpcC	no	K02286	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		0	Photosystem II (PSII) FaRLiP		EC:1.10.3.9	Replace the standard PSII subunits in far-red light conditions.	photosystem II P680 reaction center D1 protein	psbA3	no	K02703	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		0	Photosystem II (PSII) FaRLiP		0	Replace the standard PSII subunits in far-red light conditions.		psbB3	no	NA	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		0	Photosystem II (PSII) FaRLiP		0	Replace the standard PSII subunits in far-red light conditions.		psbC3	no	NA	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		0	Photosystem I (PSI) FaRLiP		0	Replace the standard PSI subunits in far-red light conditions.		psaA3	no	NA	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		0	Photosystem I (PSI) FaRLiP		0	Replace the standard PSI subunits in far-red light conditions.		psaB3	no	NA	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		0	Proteorhodopsins		0	proteorhodopsins, light-driven proton pumps that capture light energy in various wavelengths	proteorhodopsin light harvesting proton pump	pr	no	K04643	NA	NA	NA	NA	NA	NA
+yes	yes	geophotosyntesis		0	Chlorophyll f FaRLiP		EC:1.14.13.122	Converts chlorophyll a to chlorophyll f.	chlorophyllide a oxygenase	CAO, chlF	no	K13600	NA	0010277	NA	NA	NA	NA
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		
+																		

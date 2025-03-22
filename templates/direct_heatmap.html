@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Heatmap Visualization</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            margin-top: 0;
+        }
+        #heatmapContainer {
+            position: relative;
+            min-height: 800px;
+        }
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            font-size: 18px;
+            color: #666;
+        }
+        .controls {
+            margin-bottom: 20px;
+        }
+        select {
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            background-color: white;
+            margin-right: 10px;
+        }
+        .error {
+            color: red;
+            padding: 20px;
+            text-align: center;
+        }
+        .summary {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f0f8ff;
+            border-radius: 5px;
+            border-left: 4px solid #4682b4;
+        }
+        .btn {
+            padding: 8px 16px;
+            background-color: #4682b4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .btn:hover {
+            background-color: #36648b;
+        }
+        .back-btn {
+            background-color: #6c757d;
+        }
+        .back-btn:hover {
+            background-color: #5a6268;
+        }
+        .download-btn {
+            background-color: #28a745;
+        }
+        .download-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Module Completeness and Likelihood</h1>
+        
+        <div class="summary">
+            <h3>Data Summary</h3>
+            <p><strong>Modules with ≥50% completeness:</strong> <span id="highCompletenessCount">0</span></p>
+        </div>
+        
+        <div class="controls">
+            <label for="sortSelect">Sort by:</label>
+            <select id="sortSelect" onchange="updateSort()">
+                <option value="module">Module ID</option>
+                <option value="completeness">Completeness</option>
+                <option value="enceladus">Enceladus Score</option>
+                <option value="europa">Europa Score</option>
+                <option value="hits">Hits per Million</option>
+            </select>
+            
+            <a href="/" class="btn back-btn">Back to Analysis</a>
+            <a href="/download_results" class="btn download-btn">Download summary.csv</a>
+        </div>
+        
+        <div id="heatmapContainer">
+            <div class="loading">Loading visualization...</div>
+        </div>
+    </div>
+
+    <script>
+        // Parse the module data from Flask
+        const moduleData = JSON.parse('{{ module_data|safe }}');
+        
+        // Custom module display names mapping
+        const moduleDisplayNames = {
+            // Methane metabolism
+            'M00174': 'Methane oxidation, methanotroph',
+            'M00356': 'Methanogenesis (methanol)',
+            'M00357': 'Methanogenesis (acetate)',
+            'M00358': 'Coenzyme M biosynthesis',
+            'M00563': 'Methanogenesis (methylamines)',
+            'M00567': 'Methanogenesis (CO2)',
+            'M00836': 'Coenzyme F430 biosynthesis',
+            'AOM': 'Anaerobic Oxidation of Methane',
+            'M00618': 'Acetogen',
+            'Acetylene_fermetation': 'Acetylene Fermentation',
+            
+            // Sulfur metabolism
+            'M00176': 'Assimilatory sulfate reduction',
+            'M00596': 'Dissimilatory sulfate reduction',
+            'M00616': 'Sulfate-sulfur assimilation',
+            'M00617': 'Sulfate-sulfur intake',
+            
+            // Nitrogen metabolism
+            'ammonia-oxidazing': 'Ammonia Oxidation',
+            
+            // Iron metabolism
+            'Dissimilatory_iron_reduction': 'Dissimilatory iron reduction',
+            'NO3-dependent_Iron_Oxidation': 'NO3-dependent Iron Oxidation',
+            'Iron_oxidation': 'Iron oxidation',
+            
+            // Other
+            'geophotosyntesis': 'Geophotosynthesis'
+        };
+        
+        // Define color scales for Enceladus and Europa
+        const enceladusColorscale = [
+            [0, '#E6F0F9'],    // Very soft blue instead of white
+            [0.1, '#D0E9F7'],  // Light blue
+            [0.33, '#ADDCF4'],  // Medium blue
+            [0.66, '#94D0F7'],  // Darker blue
+            [1, '#4682B4']      // Deep blue
+        ];
+        
+        const europaColorscale = [
+            [0, '#F0E6FA'],    // Very soft purple instead of white
+            [0.1, '#DDD5F0'],  // Light purple
+            [0.33, '#CEC2EB'],  // Medium purple
+            [0.66, '#B29AE6'],  // Darker purple
+            [1, '#7B68EE']      // Deep purple
+        ];
+        
+        // Initialize with module sorting
+        document.addEventListener('DOMContentLoaded', function() {
+            createVisualization(moduleData, 'module');
+            
+            // Count modules with high completeness
+            const highCompletenessCount = Object.values(moduleData).filter(module => 
+                module.completeness >= 0.5
+            ).length;
+            
+            document.getElementById('highCompletenessCount').textContent = highCompletenessCount;
+        });
+        
+        function updateSort() {
+            const sortBy = document.getElementById('sortSelect').value;
+            createVisualization(moduleData, sortBy);
+        }
+        
+        function createVisualization(data, sortBy = 'module') {
+            // Get the container element
+            const container = document.getElementById('heatmapContainer');
+            container.innerHTML = '<div class="loading">Loading visualization...</div>';
+            
+            if (!data || Object.keys(data).length === 0) {
+                container.innerHTML = '<div class="loading">No modules found in the selected data.</div>';
+                return;
+            }
+            
+            // Extract module IDs and sort them based on the selected criteria
+            let moduleIds = Object.keys(data);
+            
+            if (sortBy === 'completeness') {
+                moduleIds.sort((a, b) => (data[b].completeness || 0) - (data[a].completeness || 0));
+            } else if (sortBy === 'enceladus') {
+                moduleIds.sort((a, b) => (data[b].enceladus_score || 0) - (data[a].enceladus_score || 0));
+            } else if (sortBy === 'europa') {
+                moduleIds.sort((a, b) => (data[b].europa_score || 0) - (data[a].europa_score || 0));
+            } else if (sortBy === 'hits') {
+                moduleIds.sort((a, b) => (data[b].count_per_million || 0) - (data[a].count_per_million || 0));
+            } else {
+                // Default sort by module ID
+                moduleIds.sort();
+            }
+            
+            // Prepare data for visualization
+            const moduleNames = moduleIds.map(id => moduleDisplayNames[id] || data[id].description || id);
+            const completeness = moduleIds.map(id => data[id].completeness || 0);
+            const enceladusScores = moduleIds.map(id => data[id].enceladus_score || 0);
+            const europaScores = moduleIds.map(id => data[id].europa_score || 0);
+            const tooltips = moduleIds.map(id => {
+                const module = data[id];
+                return `
+                    <b>${id}</b><br>
+                    ${module.description || ''}<br>
+                    <b>Completeness:</b> ${(module.completeness * 100).toFixed(1)}%<br>
+                    <b>Found genes:</b> ${module.found_genes ? module.found_genes.length : 0} of ${module.total_genes || 0}<br>
+                    <b>Enceladus Score:</b> ${module.enceladus_score || 0}/3<br>
+                    <b>Europa Score:</b> ${module.europa_score || 0}/3<br>
+                    <b>Normalized Counts:</b> ${(module.count_per_million || 0).toFixed(2)} per million ORFs
+                `;
+            });
+            
+            // Create gene-level frequency plot
+            const geneTraces = [];
+            moduleIds.forEach((moduleId, moduleIdx) => {
+                const module = data[moduleId];
+                const genes = module.genes || {};
+                const geneIds = Object.keys(genes);
+                
+                // If module has count_per_million but no gene data, create a dummy representation
+                if (geneIds.length === 0 && module.count_per_million > 0) {
+                    console.log(`Module ${moduleId} has no gene data but has counts: ${module.count_per_million}`);
+                    // Create a single point to represent the module's overall counts
+                    geneTraces.push({
+                        x: [moduleNames[moduleIdx]],
+                        y: [module.count_per_million],
+                        type: 'scatter',
+                        mode: 'markers',
+                        marker: {
+                            size: 8,  // Larger point to ensure visibility
+                            color: 'rgba(55, 128, 191, 0.7)'
+                        },
+                        hoverinfo: 'all',
+                        hoverlabel: {
+                            bgcolor: 'white',
+                            bordercolor: 'black',
+                            font: {size: 12}
+                        },
+                        text: [`Module ${moduleId}: ${module.count_per_million.toFixed(2)} hits per million ORFs`],
+                        showlegend: false
+                    });
+                    return;
+                }
+                
+                // For modules with zero gene counts, still add a placeholder point
+                if (geneIds.length === 0) {
+                    geneTraces.push({
+                        x: [moduleNames[moduleIdx]],
+                        y: [0],
+                        type: 'scatter',
+                        mode: 'markers',
+                        marker: {
+                            size: 5,  // Smaller point for zero counts
+                            color: 'rgba(55, 128, 191, 0.3)'
+                        },
+                        hoverinfo: 'all',
+                        hoverlabel: {
+                            bgcolor: 'white',
+                            bordercolor: 'black',
+                            font: {size: 12}
+                        },
+                        text: [`Module ${moduleId}: 0.00 hits per million ORFs`],
+                        showlegend: false
+                    });
+                    return;
+                }
+                
+                // Create a trace for each gene in the module
+                const frequencies = geneIds.map(geneId => genes[geneId].hits_per_million || 0);
+                
+                // Add points for each gene in this module with the same x-coordinate (module name)
+                geneTraces.push({
+                    x: Array(geneIds.length).fill(moduleNames[moduleIdx]),
+                    y: frequencies,
+                    type: 'scatter',
+                    mode: 'markers+lines',
+                    line: {
+                        width: 1,
+                        color: 'rgba(55, 128, 191, 0.3)'
+                    },
+                    marker: {
+                        size: 8,  // Further increased size for better hover target
+                        color: 'rgba(55, 128, 191, 0.7)'
+                    },
+                    hoverinfo: 'all',
+                    hoverlabel: {
+                        bgcolor: 'white',
+                        bordercolor: 'black',
+                        font: {size: 12}
+                    },
+                    text: geneIds.map((geneId, i) => 
+                        `<b>Gene:</b> ${geneId}<br><b>Hits:</b> ${frequencies[i].toFixed(2)} per million ORFs<br><b>Module:</b> ${moduleId}`
+                    ),
+                    showlegend: false,
+                    // Connect points within this module only
+                    connectgaps: false
+                });
+            });
+            
+            // Create completeness heatmap
+            const completenessZ = [];
+            const completenessText = [];
+            
+            for (let i = 0; i < moduleIds.length; i++) {
+                const moduleId = moduleIds[i];
+                const module = data[moduleId];
+                let completeness = module.completeness || 0;
+                
+                // Convert from decimal to percentage (0-100 scale)
+                completeness = completeness * 100;
+                
+                // Apply the 1.7x multiplier and cap at 100% for non-custom pathways
+                // Custom pathways (those with GenBank entries) already have correct completeness
+                const isCustomPathway = moduleId.startsWith('M9') || 
+                                       (module.found_genes && module.found_genes.some(gene => !gene.startsWith('K')));
+                
+                if (!isCustomPathway) {
+                    completeness = Math.min(completeness * 1.7, 100); // Apply 1.7x multiplier and cap at 100%
+                }
+                
+                completenessZ.push([completeness]);
+                
+                // Create tooltip text
+                completenessText.push([`Module: ${moduleId}<br>Name: ${module.name || 'N/A'}<br>Completeness: ${completeness.toFixed(1)}%`]);
+            }
+            
+            // Define layout with proper stacking
+            const layout = {
+                title: {
+                    text: 'Module Heatmap',
+                    font: { size: 18 }
+                },
+                height: 800,
+                margin: {
+                    l: 120,  // Increased left margin for labels
+                    r: 100,
+                    b: 150,
+                    t: 50,
+                    pad: 4
+                },
+                showlegend: false,
+                // Use a custom grid system for proper stacking
+                grid: {
+                    rows: 4,  // One row for each heatmap + one for gene hits
+                    columns: 1,
+                    pattern: 'independent',
+                    roworder: 'top to bottom'
+                },
+                // Gene hits plot (top 60%)
+                xaxis4: {
+                    domain: [0, 1],
+                    anchor: 'y4',
+                    tickangle: 45,
+                    showticklabels: false,  // Hide x-axis labels for top section
+                    tickfont: { size: 10 }
+                },
+                yaxis4: {
+                    title: 'Gene Hits per Million ORFs',
+                    domain: [0.4, 1],  // 60% of height
+                    anchor: 'x4',
+                    titlefont: {color: '#1976D2'},
+                    tickfont: {color: '#1976D2'},
+                    fixedrange: false,  // Allow y-axis interaction
+                    showspikes: true,   // Show spike lines for better hover
+                    spikemode: 'across',
+                    spikesnap: 'cursor',
+                    spikecolor: '#999',
+                    spikethickness: 1
+                },
+                // Europa section (middle-top) - 10% height
+                xaxis3: {
+                    domain: [0, 1],
+                    anchor: 'y3',
+                    tickangle: 45,
+                    showticklabels: false, // Hide x-axis labels for top sections
+                    tickfont: { size: 10 },
+                    fixedrange: true  // Disable dragging
+                },
+                yaxis3: {
+                    domain: [0.3, 0.4],  // Only 10% of height
+                    anchor: 'x3',
+                    tickmode: 'array',
+                    tickvals: [0],
+                    ticktext: ['Europa'],
+                    tickfont: { size: 10 },
+                    fixedrange: true  // Disable dragging
+                },
+                // Enceladus section (middle-bottom) - 10% height
+                xaxis2: {
+                    domain: [0, 1],
+                    anchor: 'y2',
+                    tickangle: 45,
+                    showticklabels: false, // Hide x-axis labels for middle sections
+                    tickfont: { size: 10 },
+                    fixedrange: true  // Disable dragging
+                },
+                yaxis2: {
+                    domain: [0.2, 0.3],  // Only 10% of height
+                    anchor: 'x2',
+                    tickmode: 'array',
+                    tickvals: [0],
+                    ticktext: ['Enceladus'],
+                    tickfont: { size: 10 },
+                    fixedrange: true  // Disable dragging
+                },
+                // Completeness section (bottom 20%)
+                xaxis: {
+                    domain: [0, 1],
+                    anchor: 'y',
+                    tickangle: 45,
+                    tickfont: { size: 10 },
+                    fixedrange: true  // Disable dragging
+                },
+                yaxis: {
+                    domain: [0, 0.2],  // Only 20% of height
+                    anchor: 'x',
+                    tickmode: 'array',
+                    tickvals: [0],
+                    ticktext: ['Completeness'],
+                    tickfont: { size: 10 },
+                    fixedrange: true  // Disable dragging
+                },
+                // Disable all dragging interactions
+                dragmode: false,
+                hovermode: 'closest'
+            };
+            
+            // Create the completeness heatmap at the BOTTOM
+            const completenessTrace = {
+                x: moduleNames,
+                y: ['Completeness'],  // Single value for y
+                z: [completenessZ.map(item => item[0])],  // Flatten the array structure
+                type: 'heatmap',
+                colorscale: 'Viridis',
+                showscale: true,
+                colorbar: {
+                    title: {
+                        text: '%',
+                        side: 'right',
+                        font: { size: 10 }
+                    },
+                    x: 1.02,
+                    xanchor: 'left',
+                    y: 0.1,
+                    yanchor: 'middle',
+                    len: 0.25,  // Make the colorbar 4 times shorter
+                    thickness: 10,  // Make it thinner
+                    tickfont: { size: 8 }  // Smaller tick font
+                },
+                hoverinfo: 'text',
+                text: [completenessText.map(item => item[0])],  // Flatten the array structure
+                zmin: 0,
+                zmax: 100
+            };
+            
+            // Create Enceladus score trace (10% height) in the MIDDLE-BOTTOM
+            const enceladusTrace = {
+                x: moduleNames,
+                y: [0],  // Single value for y
+                z: [enceladusScores.map(score => score / 3)], // Normalize scores to 0-1 range
+                type: 'heatmap',
+                colorscale: enceladusColorscale,
+                showscale: true,
+                xaxis: 'x2',
+                yaxis: 'y2',
+                colorbar: {
+                    title: 'Enceladus<br>Likelihood',
+                    titleside: 'right',
+                    x: 1.05,
+                    y: 0.45,
+                    len: 0.15,
+                    thickness: 10,
+                    xanchor: 'left',
+                    yanchor: 'middle',
+                    tickvals: [0, 0.33, 0.66, 1],
+                    ticktext: ['0', '1', '2', '3']
+                },
+                hoverinfo: 'text',
+                text: [enceladusScores.map((score, i) => `Enceladus likelihood: ${score}/3<br>${moduleIds[i]}`)],
+                zmin: 0,
+                zmax: 1
+            };
+            
+            // Create Europa score trace (10% height) in the MIDDLE-TOP
+            const europaTrace = {
+                x: moduleNames,
+                y: [0],  // Single value for y
+                z: [europaScores.map(score => score / 3)], // Normalize scores to 0-1 range
+                type: 'heatmap',
+                colorscale: europaColorscale,
+                showscale: true,
+                xaxis: 'x3',
+                yaxis: 'y3',
+                colorbar: {
+                    title: 'Europa<br>Likelihood',
+                    titleside: 'right',
+                    x: 1.05,
+                    y: 0.65,
+                    len: 0.15,
+                    thickness: 10,
+                    xanchor: 'left',
+                    yanchor: 'middle',
+                    tickvals: [0, 0.33, 0.66, 1],
+                    ticktext: ['0', '1', '2', '3']
+                },
+                hoverinfo: 'text',
+                text: [europaScores.map((score, i) => `Europa likelihood: ${score}/3<br>${moduleIds[i]}`)],
+                zmin: 0,
+                zmax: 1
+            };
+            
+            // Adjust gene traces to use axis4
+            geneTraces.forEach(trace => {
+                trace.xaxis = 'x4';
+                trace.yaxis = 'y4';
+                trace.hoverinfo = 'all';
+            });
+            
+            // Combine all traces in the correct stacking order
+            // From bottom to top: completeness, Enceladus, Europa, gene traces
+            const allTraces = [completenessTrace, enceladusTrace, europaTrace, ...geneTraces];
+            
+            Plotly.newPlot('heatmapContainer', allTraces, layout);
+        }
+    </script>
+</body>
+</html>

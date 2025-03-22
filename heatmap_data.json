@@ -1,0 +1,358 @@
+{
+  "M00174": {
+    "name": "Methane oxidation, methanotroph, methane => formaldehyde",
+    "description": "Methane oxidation, methanotroph, methane => formaldehyde - ((K10944+K10945+K10946),(K16157+K16158+K16159+K16160+K16161+K16162)) ((K14028-K14029),K23995)",
+    "total_genes": 12,
+    "found_genes": [
+      "K23995"
+    ],
+    "completeness": 0.08333333333333333,
+    "enceladus_score": 2,
+    "europa_score": 3,
+    "count_per_million": 10000.0,
+    "genes": {
+      "K23995": {
+        "gene_id": "K23995",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      }
+    }
+  },
+  "M00176": {
+    "name": "Assimilatory sulfate reduction, sulfate => H2S",
+    "description": "Assimilatory sulfate reduction, sulfate => H2S - (K00958+K00860,K00955+K00957,K00956+K00957+K00860) K00390 (K00380+K00381,K00392)",
+    "total_genes": 9,
+    "found_genes": [
+      "K00955",
+      "K00860"
+    ],
+    "completeness": 0.2222222222222222,
+    "enceladus_score": 1,
+    "europa_score": 3,
+    "count_per_million": 20000.0,
+    "genes": {
+      "K00955": {
+        "gene_id": "K00955",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      },
+      "K00860": {
+        "gene_id": "K00860",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      }
+    }
+  },
+  "M00356": {
+    "name": "Methanogenesis, methanol => methane",
+    "description": "Methanogenesis, methanol => methane - K14080+K04480+K14081 K00399+K00401+K00402 (K22480+K22481+K22482,K03388+K03389+K03390,K08264+K08265,K03388+K03389+K03390+K14127+(K14126+K14128,K22516+K00125))",
+    "total_genes": 19,
+    "found_genes": [
+      "K22516",
+      "K03388",
+      "K00125",
+      "K14126",
+      "K14127",
+      "K22480",
+      "K14128"
+    ],
+    "completeness": 0.3684210526315789,
+    "enceladus_score": 2,
+    "europa_score": 0,
+    "count_per_million": 270000.0,
+    "genes": {
+      "K22516": {
+        "gene_id": "K22516",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      },
+      "K03388": {
+        "gene_id": "K03388",
+        "hits_per_million": 90000.0,
+        "query_count": 9
+      },
+      "K00125": {
+        "gene_id": "K00125",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      },
+      "K14126": {
+        "gene_id": "K14126",
+        "hits_per_million": 30000.0,
+        "query_count": 3
+      },
+      "K14127": {
+        "gene_id": "K14127",
+        "hits_per_million": 110000.0,
+        "query_count": 11
+      },
+      "K22480": {
+        "gene_id": "K22480",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      },
+      "K14128": {
+        "gene_id": "K14128",
+        "hits_per_million": 20000.0,
+        "query_count": 2
+      }
+    }
+  },
+  "M00357": {
+    "name": "Methanogenesis, acetate => methane",
+    "description": "Methanogenesis, acetate => methane - ((K00925 K00625),K01895) (K00193+K00197+K00194) (K00577+K00578+K00579+K00580+K00581-K00582-K00583+K00584) (K00399+K00401+K00402) (K22480+K22481+K22482,K03388+K03389+K03390,K08264+K08265,K03388+K03389+K03390+K14127+(K14126+K14128,K22516+K00125))",
+    "total_genes": 30,
+    "found_genes": [
+      "K22516",
+      "K03388",
+      "K00125",
+      "K01895",
+      "K14126",
+      "K14127",
+      "K22480",
+      "K14128",
+      "K00194"
+    ],
+    "completeness": 0.3,
+    "enceladus_score": 2,
+    "europa_score": 0,
+    "count_per_million": 310000.0,
+    "genes": {
+      "K22516": {
+        "gene_id": "K22516",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      },
+      "K03388": {
+        "gene_id": "K03388",
+        "hits_per_million": 90000.0,
+        "query_count": 9
+      },
+      "K00125": {
+        "gene_id": "K00125",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      },
+      "K01895": {
+        "gene_id": "K01895",
+        "hits_per_million": 30000.0,
+        "query_count": 3
+      },
+      "K14126": {
+        "gene_id": "K14126",
+        "hits_per_million": 30000.0,
+        "query_count": 3
+      },
+      "K14127": {
+        "gene_id": "K14127",
+        "hits_per_million": 110000.0,
+        "query_count": 11
+      },
+      "K22480": {
+        "gene_id": "K22480",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      },
+      "K14128": {
+        "gene_id": "K14128",
+        "hits_per_million": 20000.0,
+        "query_count": 2
+      },
+      "K00194": {
+        "gene_id": "K00194",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      }
+    }
+  },
+  "M00358": {
+    "name": "Coenzyme M biosynthesis",
+    "description": "Coenzyme M biosynthesis - K08097 K05979 K05884 K13039+K06034",
+    "total_genes": 5,
+    "found_genes": [],
+    "completeness": 0.0,
+    "enceladus_score": 3,
+    "europa_score": 2,
+    "count_per_million": 0,
+    "genes": {}
+  },
+  "M00563": {
+    "name": "Methanogenesis, methylamine/dimethylamine/trimethylamine => methane",
+    "description": "Methanogenesis, methylamine/dimethylamine/trimethylamine => methane - K14082 ((K16177-K16176),(K16179-K16178),(K14084-K14083)) K00399+K00401+K00402 (K22480+K22481+K22482,K03388+K03389+K03390,K08264+K08265,K03388+K03389+K03390+K14127+(K14126+K14128,K22516+K00125))",
+    "total_genes": 23,
+    "found_genes": [
+      "K22516",
+      "K03388",
+      "K00125",
+      "K14084",
+      "K14126",
+      "K14127",
+      "K16179",
+      "K22480",
+      "K14128"
+    ],
+    "completeness": 0.391304347826087,
+    "enceladus_score": 1,
+    "europa_score": 0,
+    "count_per_million": 290000.0,
+    "genes": {
+      "K22516": {
+        "gene_id": "K22516",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      },
+      "K03388": {
+        "gene_id": "K03388",
+        "hits_per_million": 90000.0,
+        "query_count": 9
+      },
+      "K00125": {
+        "gene_id": "K00125",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      },
+      "K14084": {
+        "gene_id": "K14084",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      },
+      "K14126": {
+        "gene_id": "K14126",
+        "hits_per_million": 30000.0,
+        "query_count": 3
+      },
+      "K14127": {
+        "gene_id": "K14127",
+        "hits_per_million": 110000.0,
+        "query_count": 11
+      },
+      "K16179": {
+        "gene_id": "K16179",
+        "hits_per_million": 20000.0,
+        "query_count": 2
+      },
+      "K22480": {
+        "gene_id": "K22480",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      },
+      "K14128": {
+        "gene_id": "K14128",
+        "hits_per_million": 20000.0,
+        "query_count": 2
+      }
+    }
+  },
+  "M00567": {
+    "name": "Methanogenesis, CO2 => methane",
+    "description": "Methanogenesis, CO2 => methane - (K00200+K00201+K00202+K00203-K11261+(K00205,K11260,K00204)) K00672 K01499 (K00319,K13942) K00320 (K00577+K00578+K00579+K00580+K00581-K00582-K00583+K00584) (K00399+K00401+K00402) (K22480+K22481+K22482,K03388+K03389+K03390,K08264+K08265,K03388+K03389+K03390+K14127+(K14126+K14128,K22516+K00125))",
+    "total_genes": 37,
+    "found_genes": [
+      "K11260",
+      "K01499",
+      "K22516",
+      "K03388",
+      "K00125",
+      "K00204",
+      "K14126",
+      "K14127",
+      "K22480",
+      "K14128",
+      "K00205"
+    ],
+    "completeness": 0.2972972972972973,
+    "enceladus_score": 3,
+    "europa_score": 2,
+    "count_per_million": 380000.0,
+    "genes": {
+      "K11260": {
+        "gene_id": "K11260",
+        "hits_per_million": 40000.0,
+        "query_count": 4
+      },
+      "K01499": {
+        "gene_id": "K01499",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      },
+      "K22516": {
+        "gene_id": "K22516",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      },
+      "K03388": {
+        "gene_id": "K03388",
+        "hits_per_million": 90000.0,
+        "query_count": 9
+      },
+      "K00125": {
+        "gene_id": "K00125",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      },
+      "K00204": {
+        "gene_id": "K00204",
+        "hits_per_million": 20000.0,
+        "query_count": 2
+      },
+      "K14126": {
+        "gene_id": "K14126",
+        "hits_per_million": 30000.0,
+        "query_count": 3
+      },
+      "K14127": {
+        "gene_id": "K14127",
+        "hits_per_million": 110000.0,
+        "query_count": 11
+      },
+      "K22480": {
+        "gene_id": "K22480",
+        "hits_per_million": 10000.0,
+        "query_count": 1
+      },
+      "K14128": {
+        "gene_id": "K14128",
+        "hits_per_million": 20000.0,
+        "query_count": 2
+      },
+      "K00205": {
+        "gene_id": "K00205",
+        "hits_per_million": 40000.0,
+        "query_count": 4
+      }
+    }
+  },
+  "M00596": {
+    "name": "Dissimilatory sulfate reduction, sulfate => H2S",
+    "description": "Dissimilatory sulfate reduction, sulfate => H2S - K00958 (K00394+K00395) (K11180+K11181-K27196) (K27187+K27188+K27189+K27190+K27191)",
+    "total_genes": 11,
+    "found_genes": [],
+    "completeness": 0.0,
+    "enceladus_score": 1,
+    "europa_score": 3,
+    "count_per_million": 0,
+    "genes": {}
+  },
+  "M00616": {
+    "name": "Sulfate-sulfur assimilation",
+    "description": "Sulfate-sulfur assimilation - (K02048,K23163)+K02046+K02047+K02045 M00176",
+    "total_genes": 5,
+    "found_genes": [],
+    "completeness": 0.0,
+    "enceladus_score": 1,
+    "europa_score": 3,
+    "count_per_million": 0,
+    "genes": {}
+  },
+  "M00836": {
+    "name": "Coenzyme F430 biosynthesis, sirohydrochlorin => coenzyme F430",
+    "description": "Coenzyme F430 biosynthesis, sirohydrochlorin => coenzyme F430 - K22011 K22012 (K21610+K21611) K21612",
+    "total_genes": 5,
+    "found_genes": [],
+    "completeness": 0.0,
+    "enceladus_score": 3,
+    "europa_score": 3,
+    "count_per_million": 0,
+    "genes": {}
+  }
+}
