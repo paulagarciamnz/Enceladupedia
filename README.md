@@ -1,11 +1,20 @@
 
-<img width="970" alt="image" src="https://github.com/user-attachments/assets/6dc3edc1-81ca-4009-bc96-5711d5c0e692" />
+<img width="970" alt="image" src="https://github.com/user-attachments/assets/08d6fc47-8ed0-490e-9e3c-ae6df4298441" />
 
+## Quick assess the astrobiology potential of your metagenomic data
 # Enceladupedia 🪐🦠🧫
-
 A web application for analyzing metagenomic sequences and identifying target genes related to methanogenesis and other metabolic pathways.
 
-## Quick Start
+
+## Getting Started
+
+Enceladupedia works through a user-friendly web interface, but you'll need to set up the environment using command-line instructions first. If you're not familiar with command lines, don't worry! The process is straightforward.
+
+We all have started somewhere, you might find this resources useful:
+- [Introduction to Command Line](https://tutorial.djangogirls.org/en/intro_to_command_line/)
+- [Installing Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
+
+## Installation
 
 1. Clone the repository:
 ```bash
