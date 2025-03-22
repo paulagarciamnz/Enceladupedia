@@ -1,4 +1,7 @@
-# Enceladupedia
+
+<img width="970" alt="image" src="https://github.com/user-attachments/assets/6dc3edc1-81ca-4009-bc96-5711d5c0e692" />
+
+# Enceladupedia 🪐🦠🧫
 
 A web application for analyzing metagenomic sequences and identifying target genes related to methanogenesis and other metabolic pathways.
 
