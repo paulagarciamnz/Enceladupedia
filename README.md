@@ -58,11 +58,10 @@ python prepare_kegg_db.py
 # Return to the main directory
 cd ../../
 
-# Download GenBank entries for custom modules
-python download_genbank_entries.py
+python databases/download_sequences.py
 
-# Create DIAMOND database with both KEGG and GenBank entries
-diamond makedb --in all_proteins.fasta --db all_proteins
+# The download_sequences.py script will create a DIAMOND database including all our target genes
+
 ```
 
 6. Run the application:
