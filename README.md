@@ -74,10 +74,10 @@ The application will be available at http://localhost:8888
 
 ## Features
 
-- Upload and analyze DNA sequences
-- Identify genes using Prodigal (optimized for prokaryotic genomes)
+- Upload and analyze assembled sequences (optimized for contigs, you might want to change parameters in the app.py to work with genomes)
+- Identify genes using Prodigal (optimized for prokaryotic metagenomes)
 - Match predicted proteins against KEGG database using DIAMOND
-- Generate interactive visualizations of metabolic pathways
+- Generate interactive visualizations of astrobiology-relevant features
 - Cache results for faster repeated analyses
 
 ## Requirements
