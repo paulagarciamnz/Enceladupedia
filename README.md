@@ -109,15 +109,11 @@ If you can't download the full database, you can:
 2. Use pre-computed DIAMOND database (contact maintainers)
 3. Use the online version at [your-website-url]
 
-## Contributing
+## Contributing with your feedback
 
-Contributions are welcome! Please read `CONTRIBUTING.md` for guidelines.
-
-## License
-
-This project is licensed under the MIT License - see the `LICENSE` file for details.
+If you have any ideas on how to improve this tool, let us know!
 
 ## Citation
 
 If you use this tool in your research, please cite:
-[Your citation information]
+[so far we don't have a citation, we'll update soon!]
