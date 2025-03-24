@@ -106,8 +106,7 @@ This process:
 If you can't download the full database, you can:
 
 1. Use a smaller subset of KEGG (instructions in `docs/small_db_setup.md`)
-2. Use pre-computed DIAMOND database (contact maintainers)
-3. Use the online version at [your-website-url]
+2. Use pre-computed DIAMOND database (contact us)
 
 ## Contributing with your feedback
 
