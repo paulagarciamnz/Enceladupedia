@@ -3,7 +3,7 @@
 
 ## Quick assess the astrobiology potential of your metagenomic data
 # Enceladupedia 🪐🦠🧫
-A web application for analyzing metagenomic sequences and identifying target genes related to methanogenesis and other metabolic pathways.
+A web application for fast-analyzing metagenomic assemblies and identifying target fucntions relevant in the context of icy moon's environments.
 
 
 ## Getting Started
